@@ -1,0 +1,24 @@
+universe = vanilla
+executable = my_job.sh
+
+Requirements = HAS_SINGULARITY == TRUE
++SingularityImage = "/cvmfs/singularity.opensciencegrid.org/arnaudbecheler/quetzal-open-science-grid:latest"
+
+should_transfer_files = YES
+WhenToTransferOutput = ON_EXIT
+
+# a list of files that the job needs
+transfer_input_files = input_files/suitability.tif, input_files/sample.csv, input_files/EGG1.conf, input_files/ssdefs.txt, input_files/imap.txt, arlsumstat3522_64bit
+
+# where and what to output
+transfer_output_files = outSS
+transfer_output_remaps = "outSS = output_files/outSS-$(Process).txt"
+output = output_files/EGG1-$(Process).out
+error = output_files/EGG1-$(Process).err
+log = output_files/EGG1-$(Process).log
+
+request_cpus = 1
+request_memory = 10GB
+request_disk = 1MB
+
+queue 10
