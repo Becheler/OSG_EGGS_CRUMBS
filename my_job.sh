@@ -47,7 +47,7 @@ do
   --imap "imap.txt" \
   --output "pods/arlequin/pod_"$i".arp"
 
-  if [ $i -eq 1 ]; then
+  if [ $i -eq ${rowids[0]} ]; then
       ./arlsumstat3522_64bit "pods/arlequin/pod_"$i".arp" outSS 0 1 run_silent
    else
       ./arlsumstat3522_64bit "pods/arlequin/pod_"$i".arp" outSS 1 0 run_silent
