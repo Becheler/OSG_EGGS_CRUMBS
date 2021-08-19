@@ -6,8 +6,7 @@ Requirements = HAS_SINGULARITY == TRUE
 
 should_transfer_files = YES
 WhenToTransferOutput = ON_EXIT
-
-transfer_input_files = output.db, input_files/imap.txt
+transfer_input_files = output.db, input_files/imap.txt, *phyl
 transfer_output_files = pods/arlequin/*.arp
 
 output = output_files/C.out
