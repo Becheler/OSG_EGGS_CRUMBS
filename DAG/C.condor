@@ -1,0 +1,15 @@
+universe = vanilla
+executable = C.sh
+
+Requirements = HAS_SINGULARITY == TRUE
++SingularityImage = "/cvmfs/singularity.opensciencegrid.org/arnaudbecheler/quetzal-open-science-grid:latest"
+
+output = output_files/C.out
+error  = output_files/C.err
+log    = output_files/C.log
+
+request_cpus = 1
+request_memory = 10GB
+request_disk = 1MB
+
+queue

@@ -1,0 +1,16 @@
+> K_max=1
+> K_min=0
+> K_suit=127
+> N_0=24
+> config=EGG1.conf
+> duration=304
+> emigrant_rate=0.0412462
+> lat_0=-14.6875
+> lon_0=133.688
+> n_loci=1
+> output=output.db
+> p_K=0.00153548
+> r=2.48428
+> reuse=10
+> suitability=suitability.tif
+> tips=sample.csv

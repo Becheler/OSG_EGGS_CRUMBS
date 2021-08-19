@@ -32,6 +32,7 @@ rowids=$(python3 -m crumbs.get_successful_simulations_rowids --database "output.
 
 for i in $rowids
 do
+  echo "Rowid "$i
   s=$(python3 -m crumbs.sample "uniform_real" 0.00025 0.0000025)
 
   python3 -m crumbs.simulate_phylip_sequences \
@@ -41,17 +42,24 @@ do
   --sequence_size 1041  \
   --scale_tree $s \
   --output "pods/phylip/pod_"$i".phyl"
+  
+  echo "Simulated: pod_"$i".phyl"  
 
   python3 -m crumbs.phylip2arlequin \
   --input "pods/phylip/pod_"$i".phyl" \
   --imap "imap.txt" \
   --output "pods/arlequin/pod_"$i".arp"
 
+  echo "Phylip converted to Arlequin pod_"$i".arp"
+
   if [ $i -eq ${rowids[0]} ]; then
+      echo "Printing headers and sumstats"
       ./arlsumstat3522_64bit "pods/arlequin/pod_"$i".arp" outSS 0 1 run_silent
    else
+      echo "Printing sumstats"
       ./arlsumstat3522_64bit "pods/arlequin/pod_"$i".arp" outSS 1 0 run_silent
    fi
    rm "pods/arlequin/pod_"$i".res" -r
 
 done
+
