@@ -4,7 +4,7 @@ executable = B.sh
 Requirements = HAS_SINGULARITY == TRUE
 +SingularityImage = "/cvmfs/singularity.opensciencegrid.org/arnaudbecheler/quetzal-open-science-grid:latest"
 
-#transfer_input_files = output.db, input_files/imap.txt
+transfer_input_files = output.db
 
 output = output_files/B.out
 error  = output_files/B.err

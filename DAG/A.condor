@@ -9,7 +9,7 @@ WhenToTransferOutput = ON_EXIT
 
 transfer_input_files = input_files/suitability.tif, input_files/sample.csv, input_files/EGG1.conf, input_files/imap.txt
 
-#transfer_output_files = output.db
+transfer_output_files = output.db
 
 output = output_files/A.out
 error  = output_files/A.err

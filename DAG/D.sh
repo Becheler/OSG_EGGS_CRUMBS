@@ -6,10 +6,9 @@ for i in $rowids
 do
 
   if [ $i -eq ${rowids[0]} ]; then
-      ./arlsumstat3522_64bit "pods/arlequin/pod_"$i".arp" outSS 0 1 run_silent
+      ./arlsumstat3522_64bit "pod_"$i".arp" outSS 0 1 run_silent
    else
-      ./arlsumstat3522_64bit "pods/arlequin/pod_"$i".arp" outSS 1 0 run_silent
+      ./arlsumstat3522_64bit "pod_"$i".arp" outSS 1 0 run_silent
    fi
-   rm "pods/arlequin/pod_"$i".res" -r
 
 done
