@@ -2,6 +2,8 @@
 
 rowids=$(python3 -m crumbs.get_successful_simulations_rowids --database "output.db" --table "quetzal_EGG_1")
 
+mkdir phylip
+
 for i in $rowids
 do
   s=$(python3 -m crumbs.sample "uniform_real" 0.00025 0.0000025)
@@ -12,6 +14,8 @@ do
   --rowid $i\
   --sequence_size 1041  \
   --scale_tree $s \
-  --output "pods/phylip/pod_"$i".phyl"
+  --output "phylip/pod_"$i".phyl"
 
 done
+
+tar -czf phylip.tar.gz phylip
