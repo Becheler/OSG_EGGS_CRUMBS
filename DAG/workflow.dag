@@ -1,7 +1,56 @@
-JOB  A  A.condor
-JOB  B  B.condor
-JOB  C  C.condor
-JOB  D  D.condor
+JOB  A  {
+    universe = vanilla
+    executable = A.sh
+    Requirements = HAS_SINGULARITY == TRUE
+    +SingularityImage = "/cvmfs/singularity.opensciencegrid.org/arnaudbecheler/quetzal-open-science-grid:latest"
+    should_transfer_files = YES
+    WhenToTransferOutput = ON_EXIT
+    transfer_input_files = input_files/suitability.tif, input_files/sample.csv, input_files/EGG1.conf, input_files/imap.txt
+    transfer_output_files = output.db
+    output = output_files/A.out
+    error  = output_files/A.err
+    log    = output_files/A.log
+    request_cpus = 1
+    request_memory = 10GB
+    request_disk = 1MB
+}
+JOB  B  {
+    universe = vanilla
+    executable = B.sh
+    Requirements = HAS_SINGULARITY == TRUE
+    +SingularityImage = "/cvmfs/singularity.opensciencegrid.org/arnaudbecheler/quetzal-open-science-grid:latest"
+    should_transfer_files = YES
+    WhenToTransferOutput = ON_EXIT
+    transfer_input_files = output.db
+    transfer_output_files = pods/phylip/*.phyl
+    output = output_files/B.out
+    error  = output_files/B.err
+    log    = output_files/B.log
+}
+JOB  C  {
+    universe = vanilla
+    executable = C.sh
+    Requirements = HAS_SINGULARITY == TRUE
+    +SingularityImage = "/cvmfs/singularity.opensciencegrid.org/arnaudbecheler/quetzal-open-science-grid:latest"
+    should_transfer_files = YES
+    WhenToTransferOutput = ON_EXIT
+    transfer_input_files = output.db, input_files/imap.txt, *phyl
+    transfer_output_files = pods/arlequin/*.arp
+    output = output_files/C.out
+    error  = output_files/C.err
+    log    = output_files/C.log
+}
+JOB  D  {
+    Requirements = HAS_SINGULARITY == TRUE
+    +SingularityImage = "/cvmfs/singularity.opensciencegrid.org/arnaudbecheler/quetzal-open-science-grid:latest"
+    should_transfer_files = YES
+    transfer_input_files = arlsumstat3522_64bit, *.arp
+    WhenToTransferOutput = ON_EXIT
+    transfer_output_files = outSS
+    output = output_files/D.out
+    error  = output_files/D.err
+    log    = output_files/D.log
+}
 PARENT A CHILD B
 PARENT B CHILD C
 PARENT C CHILD D
