@@ -2,6 +2,8 @@
 
 rowids=$(python3 -m crumbs.get_successful_simulations_rowids --database "output.db" --table "quetzal_EGG_1")
 
+[[ -z "$rowids" ]] && { echo "No newick formula found in database, rowids is empty" ; exit 1; }
+
 mkdir phylip
 
 for i in $rowids
