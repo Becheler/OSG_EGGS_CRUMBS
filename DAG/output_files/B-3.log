@@ -1,0 +1,35 @@
+000 (14742096.000.000) 2021-08-24 22:47:52 Job submitted from host: <192.170.227.166:9618?addrs=192.170.227.166-9618&alias=login04.osgconnect.net&noUDP&sock=schedd_485618_226e>
+    DAG Node: B3
+...
+040 (14742096.000.000) 2021-08-24 22:47:59 Started transferring input files
+	Transferring to host: <192.168.229.15:38812?CCBID=192.170.227.251:9705%3faddrs%3d192.170.227.251-9705+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9705%26alias%3dflock.opensciencegrid.org#1779369&PrivNet=hel-n0015.hel.pcc.amnh.org&addrs=192.168.229.15-38812&alias=hel-n0015.hel.pcc.amnh.org&noUDP>
+...
+040 (14742096.000.000) 2021-08-24 22:47:59 Finished transferring input files
+...
+001 (14742096.000.000) 2021-08-24 22:48:00 Job executing on host: <192.168.229.15:44257?CCBID=192.170.227.251:9710%3faddrs%3d192.170.227.251-9710+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9710%26alias%3dflock.opensciencegrid.org#1814407&PrivNet=hel-n0015.hel.pcc.amnh.org&addrs=192.168.229.15-44257&alias=hel-n0015.hel.pcc.amnh.org&noUDP>
+...
+006 (14742096.000.000) 2021-08-24 22:48:00 Image size of job updated: 1
+	3  -  MemoryUsage of job (MB)
+	2904  -  ResidentSetSize of job (KB)
+...
+040 (14742096.000.000) 2021-08-24 22:48:00 Started transferring output files
+...
+040 (14742096.000.000) 2021-08-24 22:48:00 Finished transferring output files
+...
+005 (14742096.000.000) 2021-08-24 22:48:01 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	1200  -  Run Bytes Sent By Job
+	8746  -  Run Bytes Received By Job
+	1200  -  Total Bytes Sent By Job
+	8746  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :     4219     1024   1606985 
+	   Memory (MB)          :        3    10240     10240 
+
+	Job terminated of its own accord at 2021-08-25T03:48:00Z.
+...

@@ -1,0 +1,35 @@
+000 (14742110.000.000) 2021-08-24 22:53:38 Job submitted from host: <192.170.227.166:9618?addrs=192.170.227.166-9618&alias=login04.osgconnect.net&noUDP&sock=schedd_485618_226e>
+    DAG Node: B1
+...
+040 (14742110.000.000) 2021-08-24 22:53:41 Started transferring input files
+	Transferring to host: <172.20.7.27:39103?CCBID=192.170.227.251:9741%3faddrs%3d192.170.227.251-9741+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9741%26alias%3dflock.opensciencegrid.org#1772864&PrivNet=c0727.rhino.hcc.unl.edu&addrs=172.20.7.27-39103&alias=c0727.rhino.hcc.unl.edu&noUDP>
+...
+040 (14742110.000.000) 2021-08-24 22:53:41 Finished transferring input files
+...
+001 (14742110.000.000) 2021-08-24 22:53:42 Job executing on host: <172.20.7.27:40311?CCBID=192.170.227.251:9827%3faddrs%3d192.170.227.251-9827+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9827%26alias%3dflock.opensciencegrid.org#1751271&PrivNet=c0727.rhino.hcc.unl.edu&addrs=172.20.7.27-40311&alias=c0727.rhino.hcc.unl.edu&noUDP>
+...
+006 (14742110.000.000) 2021-08-24 22:53:46 Image size of job updated: 1797332
+	59  -  MemoryUsage of job (MB)
+	60240  -  ResidentSetSize of job (KB)
+...
+040 (14742110.000.000) 2021-08-24 22:53:47 Started transferring output files
+...
+040 (14742110.000.000) 2021-08-24 22:53:47 Finished transferring output files
+...
+005 (14742110.000.000) 2021-08-24 22:53:47 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	1014  -  Run Bytes Sent By Job
+	8746  -  Run Bytes Received By Job
+	1014  -  Total Bytes Sent By Job
+	8746  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :      194     1024   1903578 
+	   Memory (MB)          :       59    10240     10240 
+
+	Job terminated of its own accord at 2021-08-25T03:53:46Z.
+...

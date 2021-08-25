@@ -1,0 +1,35 @@
+000 (14742102.000.000) 2021-08-24 22:49:27 Job submitted from host: <192.170.227.166:9618?addrs=192.170.227.166-9618&alias=login04.osgconnect.net&noUDP&sock=schedd_485618_226e>
+    DAG Node: B2
+...
+040 (14742102.000.000) 2021-08-24 22:49:31 Started transferring input files
+	Transferring to host: <10.5.215.191:45311?CCBID=192.170.227.251:9764%3faddrs%3d192.170.227.251-9764+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9764%26alias%3dflock.opensciencegrid.org#1789435&PrivNet=CRUSH-OSG-C7-10-5-215-191&addrs=10.5.215.191-45311&alias=CRUSH-OSG-C7-10-5-215-191&noUDP>
+...
+040 (14742102.000.000) 2021-08-24 22:49:31 Finished transferring input files
+...
+001 (14742102.000.000) 2021-08-24 22:49:32 Job executing on host: <10.5.215.191:42728?CCBID=192.170.227.251:9822%3faddrs%3d192.170.227.251-9822+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9822%26alias%3dflock.opensciencegrid.org#1751909&PrivNet=CRUSH-OSG-C7-10-5-215-191&addrs=10.5.215.191-42728&alias=CRUSH-OSG-C7-10-5-215-191&noUDP>
+...
+006 (14742102.000.000) 2021-08-24 22:49:33 Image size of job updated: 482480
+	20  -  MemoryUsage of job (MB)
+	19936  -  ResidentSetSize of job (KB)
+...
+040 (14742102.000.000) 2021-08-24 22:49:34 Started transferring output files
+...
+040 (14742102.000.000) 2021-08-24 22:49:34 Finished transferring output files
+...
+005 (14742102.000.000) 2021-08-24 22:49:34 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	1675  -  Run Bytes Sent By Job
+	8746  -  Run Bytes Received By Job
+	1675  -  Total Bytes Sent By Job
+	8746  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :     4218     1024    201135 
+	   Memory (MB)          :       20    10240     10240 
+
+	Job terminated of its own accord at 2021-08-25T03:49:33Z.
+...

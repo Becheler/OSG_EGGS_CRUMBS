@@ -1,0 +1,220 @@
+000 (14742090.000.000) 2021-08-24 22:46:11 Job submitted from host: <192.170.227.166:9618?addrs=192.170.227.166-9618&alias=login04.osgconnect.net&noUDP&sock=schedd_485618_226e>
+    DAG Node: A1
+...
+000 (14742091.000.000) 2021-08-24 22:46:12 Job submitted from host: <192.170.227.166:9618?addrs=192.170.227.166-9618&alias=login04.osgconnect.net&noUDP&sock=schedd_485618_226e>
+    DAG Node: A2
+...
+000 (14742092.000.000) 2021-08-24 22:46:12 Job submitted from host: <192.170.227.166:9618?addrs=192.170.227.166-9618&alias=login04.osgconnect.net&noUDP&sock=schedd_485618_226e>
+    DAG Node: A3
+...
+000 (14742093.000.000) 2021-08-24 22:46:12 Job submitted from host: <192.170.227.166:9618?addrs=192.170.227.166-9618&alias=login04.osgconnect.net&noUDP&sock=schedd_485618_226e>
+    DAG Node: A4
+...
+000 (14742094.000.000) 2021-08-24 22:46:12 Job submitted from host: <192.170.227.166:9618?addrs=192.170.227.166-9618&alias=login04.osgconnect.net&noUDP&sock=schedd_485618_226e>
+    DAG Node: A5
+...
+001 (14742093.000.000) 2021-08-24 22:46:48 Job executing on host: <172.20.9.19:34671?CCBID=192.170.227.251:9758%3faddrs%3d192.170.227.251-9758+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9758%26alias%3dflock.opensciencegrid.org#1830097&PrivNet=c0919.rhino.hcc.unl.edu&addrs=172.20.9.19-34671&alias=c0919.rhino.hcc.unl.edu&noUDP>
+...
+001 (14742091.000.000) 2021-08-24 22:46:48 Job executing on host: <10.5.215.191:42728?CCBID=192.170.227.251:9822%3faddrs%3d192.170.227.251-9822+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9822%26alias%3dflock.opensciencegrid.org#1751909&PrivNet=CRUSH-OSG-C7-10-5-215-191&addrs=10.5.215.191-42728&alias=CRUSH-OSG-C7-10-5-215-191&noUDP>
+...
+001 (14742090.000.000) 2021-08-24 22:46:48 Job executing on host: <172.20.7.27:40311?CCBID=192.170.227.251:9827%3faddrs%3d192.170.227.251-9827+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9827%26alias%3dflock.opensciencegrid.org#1751271&PrivNet=c0727.rhino.hcc.unl.edu&addrs=172.20.7.27-40311&alias=c0727.rhino.hcc.unl.edu&noUDP>
+...
+001 (14742092.000.000) 2021-08-24 22:46:48 Job executing on host: <192.168.229.15:44257?CCBID=192.170.227.251:9710%3faddrs%3d192.170.227.251-9710+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9710%26alias%3dflock.opensciencegrid.org#1814407&PrivNet=hel-n0015.hel.pcc.amnh.org&addrs=192.168.229.15-44257&alias=hel-n0015.hel.pcc.amnh.org&noUDP>
+...
+001 (14742094.000.000) 2021-08-24 22:47:35 Job executing on host: <10.2.4.36:45937?CCBID=192.170.227.251:9823%3faddrs%3d192.170.227.251-9823+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9823%26alias%3dflock.opensciencegrid.org#1787796&PrivNet=osg-wn-03&addrs=10.2.4.36-45937+[2605-fd00-4-1001-f816-3eff-fec6-129]-45937&alias=osg-wn-03&noUDP>
+...
+005 (14742092.000.000) 2021-08-24 22:47:46 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:38, Sys 0 00:00:02  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:38, Sys 0 00:00:02  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	8845  -  Run Bytes Sent By Job
+	102224  -  Run Bytes Received By Job
+	8845  -  Total Bytes Sent By Job
+	102224  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :     4318     1024   1606985 
+	   Memory (MB)          :     3179    10240     10240 
+
+	Job terminated of its own accord at 2021-08-25T03:47:46Z.
+...
+000 (14742096.000.000) 2021-08-24 22:47:52 Job submitted from host: <192.170.227.166:9618?addrs=192.170.227.166-9618&alias=login04.osgconnect.net&noUDP&sock=schedd_485618_226e>
+    DAG Node: B3
+...
+001 (14742096.000.000) 2021-08-24 22:48:00 Job executing on host: <192.168.229.15:44257?CCBID=192.170.227.251:9710%3faddrs%3d192.170.227.251-9710+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9710%26alias%3dflock.opensciencegrid.org#1814407&PrivNet=hel-n0015.hel.pcc.amnh.org&addrs=192.168.229.15-44257&alias=hel-n0015.hel.pcc.amnh.org&noUDP>
+...
+005 (14742096.000.000) 2021-08-24 22:48:01 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	1200  -  Run Bytes Sent By Job
+	8746  -  Run Bytes Received By Job
+	1200  -  Total Bytes Sent By Job
+	8746  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :     4219     1024   1606985 
+	   Memory (MB)          :        3    10240     10240 
+
+	Job terminated of its own accord at 2021-08-25T03:48:00Z.
+...
+005 (14742093.000.000) 2021-08-24 22:48:05 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:51, Sys 0 00:00:05  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:51, Sys 0 00:00:05  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	8659  -  Run Bytes Sent By Job
+	102224  -  Run Bytes Received By Job
+	8659  -  Total Bytes Sent By Job
+	102224  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :      292     1024   1895752 
+	   Memory (MB)          :     2052    10240     10240 
+
+	Job terminated of its own accord at 2021-08-25T03:48:05Z.
+...
+000 (14742099.000.000) 2021-08-24 22:48:12 Job submitted from host: <192.170.227.166:9618?addrs=192.170.227.166-9618&alias=login04.osgconnect.net&noUDP&sock=schedd_485618_226e>
+    DAG Node: B4
+...
+001 (14742099.000.000) 2021-08-24 22:48:17 Job executing on host: <192.168.229.15:44257?CCBID=192.170.227.251:9710%3faddrs%3d192.170.227.251-9710+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9710%26alias%3dflock.opensciencegrid.org#1814407&PrivNet=hel-n0015.hel.pcc.amnh.org&addrs=192.168.229.15-44257&alias=hel-n0015.hel.pcc.amnh.org&noUDP>
+...
+005 (14742099.000.000) 2021-08-24 22:48:18 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	1200  -  Run Bytes Sent By Job
+	8746  -  Run Bytes Received By Job
+	1200  -  Total Bytes Sent By Job
+	8746  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :     4219     1024   1606985 
+	   Memory (MB)          :        3    10240     10240 
+
+	Job terminated of its own accord at 2021-08-25T03:48:18Z.
+...
+005 (14742091.000.000) 2021-08-24 22:49:20 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:02:17, Sys 0 00:00:05  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:02:17, Sys 0 00:00:05  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	9320  -  Run Bytes Sent By Job
+	102224  -  Run Bytes Received By Job
+	9320  -  Total Bytes Sent By Job
+	102224  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     1.00        1         1 
+	   Disk (KB)            :  4340        1024    201135 
+	   Memory (MB)          :  3791       10240     10240 
+
+	Job terminated of its own accord at 2021-08-25T03:49:19Z.
+...
+000 (14742102.000.000) 2021-08-24 22:49:27 Job submitted from host: <192.170.227.166:9618?addrs=192.170.227.166-9618&alias=login04.osgconnect.net&noUDP&sock=schedd_485618_226e>
+    DAG Node: B2
+...
+001 (14742102.000.000) 2021-08-24 22:49:32 Job executing on host: <10.5.215.191:42728?CCBID=192.170.227.251:9822%3faddrs%3d192.170.227.251-9822+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9822%26alias%3dflock.opensciencegrid.org#1751909&PrivNet=CRUSH-OSG-C7-10-5-215-191&addrs=10.5.215.191-42728&alias=CRUSH-OSG-C7-10-5-215-191&noUDP>
+...
+005 (14742102.000.000) 2021-08-24 22:49:34 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	1675  -  Run Bytes Sent By Job
+	8746  -  Run Bytes Received By Job
+	1675  -  Total Bytes Sent By Job
+	8746  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :     4218     1024    201135 
+	   Memory (MB)          :       20    10240     10240 
+
+	Job terminated of its own accord at 2021-08-25T03:49:33Z.
+...
+005 (14742094.000.000) 2021-08-24 22:49:41 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:01:13, Sys 0 00:00:03  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:01:13, Sys 0 00:00:03  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	9320  -  Run Bytes Sent By Job
+	102224  -  Run Bytes Received By Job
+	9320  -  Total Bytes Sent By Job
+	102224  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     1.00        1         1 
+	   Disk (KB)            :  4328        1024     23219 
+	   Memory (MB)          :  2725       10240     10240 
+
+	Job terminated of its own accord at 2021-08-25T03:49:41Z.
+...
+000 (14742103.000.000) 2021-08-24 22:49:47 Job submitted from host: <192.170.227.166:9618?addrs=192.170.227.166-9618&alias=login04.osgconnect.net&noUDP&sock=schedd_485618_226e>
+    DAG Node: B5
+...
+001 (14742103.000.000) 2021-08-24 22:49:50 Job executing on host: <10.5.215.191:42728?CCBID=192.170.227.251:9822%3faddrs%3d192.170.227.251-9822+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9822%26alias%3dflock.opensciencegrid.org#1751909&PrivNet=CRUSH-OSG-C7-10-5-215-191&addrs=10.5.215.191-42728&alias=CRUSH-OSG-C7-10-5-215-191&noUDP>
+...
+005 (14742103.000.000) 2021-08-24 22:50:11 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	1675  -  Run Bytes Sent By Job
+	8746  -  Run Bytes Received By Job
+	1675  -  Total Bytes Sent By Job
+	8746  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :     4218     1024    201135 
+	   Memory (MB)          :        3    10240     10240 
+
+	Job terminated of its own accord at 2021-08-25T03:49:51Z.
+...
+005 (14742090.000.000) 2021-08-24 22:53:28 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:04:09, Sys 0 00:00:46  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:04:09, Sys 0 00:00:46  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	8657  -  Run Bytes Sent By Job
+	102224  -  Run Bytes Received By Job
+	8657  -  Total Bytes Sent By Job
+	102224  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.69        1         1 
+	   Disk (KB)            :   311        1024   1903578 
+	   Memory (MB)          :  7094       10240     10240 
+
+	Job terminated of its own accord at 2021-08-25T03:53:27Z.
+...
+000 (14742110.000.000) 2021-08-24 22:53:38 Job submitted from host: <192.170.227.166:9618?addrs=192.170.227.166-9618&alias=login04.osgconnect.net&noUDP&sock=schedd_485618_226e>
+    DAG Node: B1
+...
+001 (14742110.000.000) 2021-08-24 22:53:42 Job executing on host: <172.20.7.27:40311?CCBID=192.170.227.251:9827%3faddrs%3d192.170.227.251-9827+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9827%26alias%3dflock.opensciencegrid.org#1751271&PrivNet=c0727.rhino.hcc.unl.edu&addrs=172.20.7.27-40311&alias=c0727.rhino.hcc.unl.edu&noUDP>
+...
+005 (14742110.000.000) 2021-08-24 22:53:47 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	1014  -  Run Bytes Sent By Job
+	8746  -  Run Bytes Received By Job
+	1014  -  Total Bytes Sent By Job
+	8746  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :      194     1024   1903578 
+	   Memory (MB)          :       59    10240     10240 
+
+	Job terminated of its own accord at 2021-08-25T03:53:46Z.
+...

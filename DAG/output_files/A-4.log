@@ -1,0 +1,39 @@
+000 (14742093.000.000) 2021-08-24 22:46:12 Job submitted from host: <192.170.227.166:9618?addrs=192.170.227.166-9618&alias=login04.osgconnect.net&noUDP&sock=schedd_485618_226e>
+    DAG Node: A4
+...
+040 (14742093.000.000) 2021-08-24 22:46:47 Started transferring input files
+	Transferring to host: <172.20.9.19:33635?CCBID=192.170.227.251:9798%3faddrs%3d192.170.227.251-9798+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9798%26alias%3dflock.opensciencegrid.org#1799523&PrivNet=c0919.rhino.hcc.unl.edu&addrs=172.20.9.19-33635&alias=c0919.rhino.hcc.unl.edu&noUDP>
+...
+040 (14742093.000.000) 2021-08-24 22:46:47 Finished transferring input files
+...
+001 (14742093.000.000) 2021-08-24 22:46:48 Job executing on host: <172.20.9.19:34671?CCBID=192.170.227.251:9758%3faddrs%3d192.170.227.251-9758+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9758%26alias%3dflock.opensciencegrid.org#1830097&PrivNet=c0919.rhino.hcc.unl.edu&addrs=172.20.9.19-34671&alias=c0919.rhino.hcc.unl.edu&noUDP>
+...
+006 (14742093.000.000) 2021-08-24 22:46:57 Image size of job updated: 2061692
+	94  -  MemoryUsage of job (MB)
+	96248  -  ResidentSetSize of job (KB)
+...
+006 (14742093.000.000) 2021-08-24 22:48:05 Image size of job updated: 4061968
+	2052  -  MemoryUsage of job (MB)
+	2100900  -  ResidentSetSize of job (KB)
+...
+040 (14742093.000.000) 2021-08-24 22:48:05 Started transferring output files
+...
+040 (14742093.000.000) 2021-08-24 22:48:05 Finished transferring output files
+...
+005 (14742093.000.000) 2021-08-24 22:48:05 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:51, Sys 0 00:00:05  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:51, Sys 0 00:00:05  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	8659  -  Run Bytes Sent By Job
+	102224  -  Run Bytes Received By Job
+	8659  -  Total Bytes Sent By Job
+	102224  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :      292     1024   1895752 
+	   Memory (MB)          :     2052    10240     10240 
+
+	Job terminated of its own accord at 2021-08-25T03:48:05Z.
+...
