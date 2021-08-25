@@ -1,1 +1,13 @@
+declare: invalid name "BASH_FUNC_module()"
+declare: invalid name "}"
 WARNING  glidein_config not defined () in singularity_lib.sh. Some functions like advertise and error_gen will be limited.
+1	FAILED
+2	FAILED
+3	FAILED
+4	FAILED
+5	FAILED
+6	FAILED
+7	FAILED
+8	FAILED
+9	FAILED
+10	FAILED

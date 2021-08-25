@@ -1,3 +1,5 @@
-"python3": executable file not found in $PATH
 WARNING  glidein_config not defined () in singularity_lib.sh. Some functions like advertise and error_gen will be limited.
-/srv/condor_exec.exe: line 14: /usr/local/quetzal-EGGS/EGG1: No such file or directory
+WARNING  String '/execute/dir_' in X509_USER_PROXY (/var/lib/condor/execute/dir_21238/glide_vtU6qb/ticket/myproxy), the conversion to run in Singularity may be incorrect
+WARNING  String '/execute/dir_' in X509_USER_CERT (/var/lib/condor/execute/dir_21238/glide_vtU6qb/hostcert.pem), the conversion to run in Singularity may be incorrect
+WARNING  String '/execute/dir_' in X509_USER_KEY (/var/lib/condor/execute/dir_21238/glide_vtU6qb/hostkey.pem), the conversion to run in Singularity may be incorrect
+WARNING  String '/execute/dir_' in _CONDOR_EXECUTE (/var/lib/condor/execute/dir_21238/glide_vtU6qb/execute), the conversion to run in Singularity may be incorrect

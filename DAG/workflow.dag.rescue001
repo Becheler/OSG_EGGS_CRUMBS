@@ -1,15 +1,18 @@
 # Rescue DAG file, created after running
 #   the workflow.dag DAG file
-# Created 8/25/2021 06:38:30 UTC
+# Created 8/25/2021 17:25:18 UTC
 # Rescue DAG version: 2.0.1 (partial)
 #
 # Total number of Nodes: 40
-# Nodes premarked DONE: 5
+# Nodes premarked DONE: 8
 # Nodes that failed: 10
-#   B1,B2,A3,A4,A5,B6,A7,B8,A9,B10,<ENDLIST>
+#   B1,B2,B3,A4,B5,B6,B7,A8,B9,B10,<ENDLIST>
 
 DONE A1
 DONE A2
+DONE A3
+DONE A5
 DONE A6
-DONE A8
+DONE A7
+DONE A9
 DONE A10

@@ -1,39 +1,43 @@
-000 (14746533.000.000) 2021-08-25 01:18:31 Job submitted from host: <192.170.227.166:9618?addrs=192.170.227.166-9618&alias=login04.osgconnect.net&noUDP&sock=schedd_485618_226e>
+000 (14759490.000.000) 2021-08-25 12:16:54 Job submitted from host: <192.170.227.166:9618?addrs=192.170.227.166-9618&alias=login04.osgconnect.net&noUDP&sock=schedd_485618_226e>
     DAG Node: A2
 ...
-040 (14746533.000.000) 2021-08-25 01:19:18 Started transferring input files
-	Transferring to host: <172.20.15.11:45714?CCBID=192.170.227.251:9872%3faddrs%3d192.170.227.251-9872+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9872%26alias%3dflock.opensciencegrid.org#1792364&PrivNet=c1511.rhino.hcc.unl.edu&addrs=172.20.15.11-45714&alias=c1511.rhino.hcc.unl.edu&noUDP>
+040 (14759490.000.000) 2021-08-25 12:17:52 Entered queue to transfer input files
+	Transferring to host: <192.168.229.20:37547?CCBID=192.170.227.251:9710%3faddrs%3d192.170.227.251-9710+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9710%26alias%3dflock.opensciencegrid.org#1818570&PrivNet=hel-n0020.hel.pcc.amnh.org&addrs=192.168.229.20-37547&alias=hel-n0020.hel.pcc.amnh.org&noUDP>
 ...
-040 (14746533.000.000) 2021-08-25 01:19:18 Finished transferring input files
+040 (14759490.000.000) 2021-08-25 12:17:54 Started transferring input files
+	Seconds spent in queue: 2
 ...
-001 (14746533.000.000) 2021-08-25 01:19:19 Job executing on host: <172.20.15.11:32999?CCBID=192.170.227.251:9767%3faddrs%3d192.170.227.251-9767+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9767%26alias%3dflock.opensciencegrid.org#1778051&PrivNet=c1511.rhino.hcc.unl.edu&addrs=172.20.15.11-32999&alias=c1511.rhino.hcc.unl.edu&noUDP>
+040 (14759490.000.000) 2021-08-25 12:17:54 Finished transferring input files
 ...
-006 (14746533.000.000) 2021-08-25 01:19:28 Image size of job updated: 1947488
-	67  -  MemoryUsage of job (MB)
-	67880  -  ResidentSetSize of job (KB)
+001 (14759490.000.000) 2021-08-25 12:17:55 Job executing on host: <192.168.229.20:38319?CCBID=192.170.227.251:9792%3faddrs%3d192.170.227.251-9792+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9792%26alias%3dflock.opensciencegrid.org#1842971&PrivNet=hel-n0020.hel.pcc.amnh.org&addrs=192.168.229.20-38319&alias=hel-n0020.hel.pcc.amnh.org&noUDP>
 ...
-006 (14746533.000.000) 2021-08-25 01:22:43 Image size of job updated: 7618008
-	5154  -  MemoryUsage of job (MB)
-	5276684  -  ResidentSetSize of job (KB)
+006 (14759490.000.000) 2021-08-25 12:18:04 Image size of job updated: 782132
+	71  -  MemoryUsage of job (MB)
+	72376  -  ResidentSetSize of job (KB)
 ...
-040 (14746533.000.000) 2021-08-25 01:22:44 Started transferring output files
+006 (14759490.000.000) 2021-08-25 12:23:05 Image size of job updated: 8630580
+	7323  -  MemoryUsage of job (MB)
+	7498132  -  ResidentSetSize of job (KB)
 ...
-040 (14746533.000.000) 2021-08-25 01:22:44 Finished transferring output files
+040 (14759490.000.000) 2021-08-25 12:23:19 Started transferring output files
+	Seconds spent in queue: 327
 ...
-005 (14746533.000.000) 2021-08-25 01:22:44 Job terminated.
+040 (14759490.000.000) 2021-08-25 12:23:19 Finished transferring output files
+...
+005 (14759490.000.000) 2021-08-25 12:23:20 Job terminated.
 	(1) Normal termination (return value 0)
-		Usr 0 00:02:59, Sys 0 00:00:06  -  Run Remote Usage
+		Usr 0 00:05:00, Sys 0 00:00:11  -  Run Remote Usage
 		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
-		Usr 0 00:02:59, Sys 0 00:00:06  -  Total Remote Usage
+		Usr 0 00:05:00, Sys 0 00:00:11  -  Total Remote Usage
 		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
-	20971  -  Run Bytes Sent By Job
+	8732  -  Run Bytes Sent By Job
 	102228  -  Run Bytes Received By Job
-	20971  -  Total Bytes Sent By Job
+	8732  -  Total Bytes Sent By Job
 	102228  -  Total Bytes Received By Job
 	Partitionable Resources :    Usage  Request Allocated 
-	   Cpus                 :     0.19        1         1 
-	   Disk (KB)            :   323        1024   1645659 
-	   Memory (MB)          :  5154       10240     10240 
+	   Cpus                 :     1.00        1         1 
+	   Disk (KB)            :   311        1024   1791533 
+	   Memory (MB)          :  7323       10240     10240 
 
-	Job terminated of its own accord at 2021-08-25T06:22:43Z.
+	Job terminated of its own accord at 2021-08-25T17:23:19Z.
 ...
