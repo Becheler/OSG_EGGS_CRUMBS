@@ -1,16 +1,16 @@
-universe = vanilla
-executable = C.sh
-Requirements = HAS_SINGULARITY == TRUE
-+SingularityImage = "/cvmfs/singularity.opensciencegrid.org/arnaudbecheler/quetzal-open-science-grid:latest"
-should_transfer_files = YES
-WhenToTransferOutput = ON_EXIT
-transfer_input_files = output_files/output.db, input_files/imap.txt, output_files/phylip.tar.gz
-transfer_output_files = arlequin.tar.gz
-transfer_output_remaps = "arlequin.tar.gz = output_files/arlequin.tar.gz"
-output = output_files/C.out
-error  = output_files/C.err
-log    = output_files/C.log
-request_cpus = 1
-request_memory = 10GB
-request_disk = 1MB
+universe               = vanilla
+executable             = C.sh
+Requirements           = HAS_SINGULARITY == TRUE
++SingularityImage      = "/cvmfs/singularity.opensciencegrid.org/arnaudbecheler/quetzal-open-science-grid:latest"
+should_transfer_files  = YES
+WhenToTransferOutput   = ON_EXIT
+transfer_input_files   = output_files/output-$(i).db, input_files/imap.txt, output_files/phylip-$(i).tar.gz
+transfer_output_files  = arlequin.tar.gz
+transfer_output_remaps = "arlequin.tar.gz = output_files/arlequin-$(i).tar.gz"
+output                 = output_files/C-$(i).out
+error                  = output_files/C-$(i).err
+log                    = output_files/C-$(i).log
+request_cpus           = 1
+request_memory         = 10GB
+request_disk           = 1MB
 queue
