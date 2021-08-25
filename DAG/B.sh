@@ -6,8 +6,9 @@ rowids=$(python3 -m crumbs.get_successful_simulations_rowids --database $1 --tab
 
 [[ -z "$rowids" ]] && { echoerr "No newick formula found in database "$1", rowids is empty." ; exit 1; }
 
+echo $rowids
 mkdir phylip
-
+# rows_id_iter=($(python3 -m crumbs.get_successful_simulations_rowids --database $1 --table "quetzal_EGG_1" | tr -d '[],'))
 for i in $rowids
 do
   echo "Newick formula found in database "$1", simulating rowid "$i"."
