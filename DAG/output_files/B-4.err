@@ -1,7 +1,3 @@
-WARNING  glidein_config defined but add_config_line () not available. Some functions like advertise will be limited.
-declare: invalid name "BASH_FUNC_module()"
-declare: invalid name "}"
-WARNING  glidein_config not defined () in singularity_lib.sh. Some functions like advertise and error_gen will be limited.
 Traceback (most recent call last):
   File "/usr/lib/python3.8/runpy.py", line 194, in _run_module_as_main
     return _run_code(code, main_globals, None,

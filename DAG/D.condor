@@ -11,6 +11,6 @@ output                 = output_files/D-$(i).out
 error                  = output_files/D-$(i).err
 log                    = output_files/D-$(i).log
 request_cpus           = 1
-request_memory         = 10GB
+request_memory         = 1GB
 request_disk           = 1MB
 queue

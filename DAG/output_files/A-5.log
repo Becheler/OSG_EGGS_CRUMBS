@@ -1,39 +1,39 @@
-000 (14742094.000.000) 2021-08-24 22:46:12 Job submitted from host: <192.170.227.166:9618?addrs=192.170.227.166-9618&alias=login04.osgconnect.net&noUDP&sock=schedd_485618_226e>
+000 (14742126.000.000) 2021-08-24 23:00:03 Job submitted from host: <192.170.227.166:9618?addrs=192.170.227.166-9618&alias=login04.osgconnect.net&noUDP&sock=schedd_485618_226e>
     DAG Node: A5
 ...
-040 (14742094.000.000) 2021-08-24 22:47:34 Started transferring input files
-	Transferring to host: <10.2.4.36:42157?CCBID=192.170.227.251:9756%3faddrs%3d192.170.227.251-9756+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9756%26alias%3dflock.opensciencegrid.org#1781903&PrivNet=osg-wn-03&addrs=10.2.4.36-42157+[2605-fd00-4-1001-f816-3eff-fec6-129]-42157&alias=osg-wn-03&noUDP>
+040 (14742126.000.000) 2021-08-24 23:00:35 Started transferring input files
+	Transferring to host: <172.20.7.21:43701?CCBID=192.170.227.251:9767%3faddrs%3d192.170.227.251-9767+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9767%26alias%3dflock.opensciencegrid.org#1778132&PrivNet=c0721.rhino.hcc.unl.edu&addrs=172.20.7.21-43701&alias=c0721.rhino.hcc.unl.edu&noUDP>
 ...
-040 (14742094.000.000) 2021-08-24 22:47:34 Finished transferring input files
+040 (14742126.000.000) 2021-08-24 23:00:35 Finished transferring input files
 ...
-001 (14742094.000.000) 2021-08-24 22:47:35 Job executing on host: <10.2.4.36:45937?CCBID=192.170.227.251:9823%3faddrs%3d192.170.227.251-9823+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9823%26alias%3dflock.opensciencegrid.org#1787796&PrivNet=osg-wn-03&addrs=10.2.4.36-45937+[2605-fd00-4-1001-f816-3eff-fec6-129]-45937&alias=osg-wn-03&noUDP>
+001 (14742126.000.000) 2021-08-24 23:00:36 Job executing on host: <172.20.7.21:44783?CCBID=192.170.227.251:9834%3faddrs%3d192.170.227.251-9834+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9834%26alias%3dflock.opensciencegrid.org#1777015&PrivNet=c0721.rhino.hcc.unl.edu&addrs=172.20.7.21-44783&alias=c0721.rhino.hcc.unl.edu&noUDP>
 ...
-006 (14742094.000.000) 2021-08-24 22:47:44 Image size of job updated: 1
-	4  -  MemoryUsage of job (MB)
-	3104  -  ResidentSetSize of job (KB)
+006 (14742126.000.000) 2021-08-24 23:00:44 Image size of job updated: 2077364
+	61  -  MemoryUsage of job (MB)
+	61696  -  ResidentSetSize of job (KB)
 ...
-006 (14742094.000.000) 2021-08-24 22:49:41 Image size of job updated: 3736912
-	2725  -  MemoryUsage of job (MB)
-	2790356  -  ResidentSetSize of job (KB)
+006 (14742126.000.000) 2021-08-24 23:03:21 Image size of job updated: 7242880
+	4771  -  MemoryUsage of job (MB)
+	4885060  -  ResidentSetSize of job (KB)
 ...
-040 (14742094.000.000) 2021-08-24 22:49:41 Started transferring output files
+040 (14742126.000.000) 2021-08-24 23:03:21 Started transferring output files
 ...
-040 (14742094.000.000) 2021-08-24 22:49:41 Finished transferring output files
+040 (14742126.000.000) 2021-08-24 23:03:21 Finished transferring output files
 ...
-005 (14742094.000.000) 2021-08-24 22:49:41 Job terminated.
+005 (14742126.000.000) 2021-08-24 23:03:21 Job terminated.
 	(1) Normal termination (return value 0)
-		Usr 0 00:01:13, Sys 0 00:00:03  -  Run Remote Usage
+		Usr 0 00:02:21, Sys 0 00:00:05  -  Run Remote Usage
 		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
-		Usr 0 00:01:13, Sys 0 00:00:03  -  Total Remote Usage
+		Usr 0 00:02:21, Sys 0 00:00:05  -  Total Remote Usage
 		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
-	9320  -  Run Bytes Sent By Job
-	102224  -  Run Bytes Received By Job
-	9320  -  Total Bytes Sent By Job
-	102224  -  Total Bytes Received By Job
+	20971  -  Run Bytes Sent By Job
+	102228  -  Run Bytes Received By Job
+	20971  -  Total Bytes Sent By Job
+	102228  -  Total Bytes Received By Job
 	Partitionable Resources :    Usage  Request Allocated 
-	   Cpus                 :     1.00        1         1 
-	   Disk (KB)            :  4328        1024     23219 
-	   Memory (MB)          :  2725       10240     10240 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :      304     1024   1911737 
+	   Memory (MB)          :     4771    10240     10240 
 
-	Job terminated of its own accord at 2021-08-25T03:49:41Z.
+	Job terminated of its own accord at 2021-08-25T04:03:21Z.
 ...

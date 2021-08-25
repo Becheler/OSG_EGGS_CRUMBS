@@ -11,6 +11,6 @@ output                = B-$(i).out
 error                 = B-$(i).err
 log                   = B-$(i).log
 request_cpus          = 1
-request_memory        = 10GB
+request_memory        = 1GB
 request_disk          = 1MB
 queue

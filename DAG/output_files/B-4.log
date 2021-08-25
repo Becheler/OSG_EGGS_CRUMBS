@@ -1,35 +1,40 @@
-000 (14742099.000.000) 2021-08-24 22:48:12 Job submitted from host: <192.170.227.166:9618?addrs=192.170.227.166-9618&alias=login04.osgconnect.net&noUDP&sock=schedd_485618_226e>
+000 (14742687.000.000) 2021-08-24 23:04:27 Job submitted from host: <192.170.227.166:9618?addrs=192.170.227.166-9618&alias=login04.osgconnect.net&noUDP&sock=schedd_485618_226e>
     DAG Node: B4
 ...
-040 (14742099.000.000) 2021-08-24 22:48:16 Started transferring input files
-	Transferring to host: <192.168.229.15:43470?CCBID=192.170.227.251:9708%3faddrs%3d192.170.227.251-9708+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9708%26alias%3dflock.opensciencegrid.org#1797243&PrivNet=hel-n0015.hel.pcc.amnh.org&addrs=192.168.229.15-43470&alias=hel-n0015.hel.pcc.amnh.org&noUDP>
+040 (14742687.000.000) 2021-08-24 23:04:35 Entered queue to transfer input files
+	Transferring to host: <172.17.0.2:32779?CCBID=192.170.227.251:9858%3faddrs%3d192.170.227.251-9858+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9858%26alias%3dflock.opensciencegrid.org#1764957&PrivNet=TACC-Jetstream-Backfill-8204846b99b0&addrs=172.17.0.2-32779&alias=TACC-Jetstream-Backfill-8204846b99b0>
 ...
-040 (14742099.000.000) 2021-08-24 22:48:16 Finished transferring input files
+040 (14742687.000.000) 2021-08-24 23:04:41 Started transferring input files
+	Seconds spent in queue: 6
 ...
-001 (14742099.000.000) 2021-08-24 22:48:17 Job executing on host: <192.168.229.15:44257?CCBID=192.170.227.251:9710%3faddrs%3d192.170.227.251-9710+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9710%26alias%3dflock.opensciencegrid.org#1814407&PrivNet=hel-n0015.hel.pcc.amnh.org&addrs=192.168.229.15-44257&alias=hel-n0015.hel.pcc.amnh.org&noUDP>
+040 (14742687.000.000) 2021-08-24 23:04:41 Finished transferring input files
 ...
-006 (14742099.000.000) 2021-08-24 22:48:18 Image size of job updated: 1
-	3  -  MemoryUsage of job (MB)
-	2908  -  ResidentSetSize of job (KB)
+001 (14742687.000.000) 2021-08-24 23:04:42 Job executing on host: <172.17.0.2:37723?CCBID=192.170.227.251:9858%3faddrs%3d192.170.227.251-9858+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9858%26alias%3dflock.opensciencegrid.org#1761021&PrivNet=TACC-Jetstream-Backfill-8204846b99b0&addrs=172.17.0.2-37723&alias=TACC-Jetstream-Backfill-8204846b99b0>
 ...
-040 (14742099.000.000) 2021-08-24 22:48:18 Started transferring output files
+006 (14742687.000.000) 2021-08-24 23:04:43 Image size of job updated: 1
+	7  -  MemoryUsage of job (MB)
+	6220  -  ResidentSetSize of job (KB)
 ...
-040 (14742099.000.000) 2021-08-24 22:48:18 Finished transferring output files
+040 (14742687.000.000) 2021-08-24 23:04:44 Started transferring output files
+	Seconds spent in queue: 9
 ...
-005 (14742099.000.000) 2021-08-24 22:48:18 Job terminated.
-	(1) Normal termination (return value 1)
+040 (14742687.000.000) 2021-08-24 23:04:44 Finished transferring output files
+...
+005 (14742687.000.000) 2021-08-24 23:04:44 Job terminated.
+	(1) Normal termination (return value 90)
 		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
 		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
 		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
 		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
-	1200  -  Run Bytes Sent By Job
-	8746  -  Run Bytes Received By Job
-	1200  -  Total Bytes Sent By Job
-	8746  -  Total Bytes Received By Job
+	891  -  Run Bytes Sent By Job
+	21034  -  Run Bytes Received By Job
+	891  -  Total Bytes Sent By Job
+	21034  -  Total Bytes Received By Job
 	Partitionable Resources :    Usage  Request Allocated 
 	   Cpus                 :                 1         1 
-	   Disk (KB)            :     4219     1024   1606985 
-	   Memory (MB)          :        3    10240     10240 
+	   Disk (KB)            :       41     1024     54630 
+	   GPUs                 :                           0 
+	   Memory (MB)          :        7    10240     10240 
 
-	Job terminated of its own accord at 2021-08-25T03:48:18Z.
+	Job terminated of its own accord at 2021-08-25T04:04:44Z.
 ...

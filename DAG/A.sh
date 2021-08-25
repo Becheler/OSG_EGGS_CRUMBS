@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # prior sampling
-N=$(python3 -m crumbs.sample "uniform_integer" 10 1000)
-K=$(python3 -m crumbs.sample "uniform_integer" 10 1000)
+N=$(python3 -m crumbs.sample "uniform_integer" 10 100000)
+K=$(python3 -m crumbs.sample "uniform_integer" 10 100000)
 r=$(python3 -m crumbs.sample "uniform_real" 1 5)
 m=$(python3 -m crumbs.sample "uniform_real" 0.0 0.1)
-g=$(python3 -m crumbs.sample "uniform_integer" 100 500)
+g=$(python3 -m crumbs.sample "uniform_integer" 300 600)
 p=$(python3 -m crumbs.sample "uniform_real" 0.0001 0.1)
 latlon=($(python3 -m crumbs.sample "uniform_latlon" "suitability.tif" | tr -d '[],'))
 

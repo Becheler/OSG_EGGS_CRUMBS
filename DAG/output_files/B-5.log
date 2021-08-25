@@ -1,35 +1,56 @@
-000 (14742103.000.000) 2021-08-24 22:49:47 Job submitted from host: <192.170.227.166:9618?addrs=192.170.227.166-9618&alias=login04.osgconnect.net&noUDP&sock=schedd_485618_226e>
+000 (14742626.000.000) 2021-08-24 23:03:27 Job submitted from host: <192.170.227.166:9618?addrs=192.170.227.166-9618&alias=login04.osgconnect.net&noUDP&sock=schedd_485618_226e>
     DAG Node: B5
 ...
-040 (14742103.000.000) 2021-08-24 22:49:49 Started transferring input files
-	Transferring to host: <10.5.215.191:33765?CCBID=192.170.227.251:9791%3faddrs%3d192.170.227.251-9791+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9791%26alias%3dflock.opensciencegrid.org#1957150&PrivNet=CRUSH-OSG-C7-10-5-215-191&addrs=10.5.215.191-33765&alias=CRUSH-OSG-C7-10-5-215-191&noUDP>
+040 (14742626.000.000) 2021-08-24 23:03:44 Started transferring input files
+	Transferring to host: <10.1.1.9:41829?CCBID=192.170.227.251:9759%3faddrs%3d192.170.227.251-9759+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9759%26alias%3dflock.opensciencegrid.org#1775199&PrivNet=node09.cluster&addrs=10.1.1.9-41829&alias=node09.cluster&noUDP>
 ...
-040 (14742103.000.000) 2021-08-24 22:49:49 Finished transferring input files
+040 (14742626.000.000) 2021-08-24 23:03:44 Finished transferring input files
 ...
-001 (14742103.000.000) 2021-08-24 22:49:50 Job executing on host: <10.5.215.191:42728?CCBID=192.170.227.251:9822%3faddrs%3d192.170.227.251-9822+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9822%26alias%3dflock.opensciencegrid.org#1751909&PrivNet=CRUSH-OSG-C7-10-5-215-191&addrs=10.5.215.191-42728&alias=CRUSH-OSG-C7-10-5-215-191&noUDP>
+001 (14742626.000.000) 2021-08-24 23:03:45 Job executing on host: <10.1.1.9:43795?CCBID=192.170.227.251:9858%3faddrs%3d192.170.227.251-9858+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9858%26alias%3dflock.opensciencegrid.org#1764799&PrivNet=node09.cluster&addrs=10.1.1.9-43795&alias=node09.cluster&noUDP>
 ...
-006 (14742103.000.000) 2021-08-24 22:49:51 Image size of job updated: 1
+006 (14742626.000.000) 2021-08-24 23:03:55 Image size of job updated: 1
+	4  -  MemoryUsage of job (MB)
+	3320  -  ResidentSetSize of job (KB)
+...
+006 (14742626.000.000) 2021-08-24 23:08:55 Image size of job updated: 25872
+	5  -  MemoryUsage of job (MB)
+	4592  -  ResidentSetSize of job (KB)
+...
+007 (14742626.000.000) 2021-08-24 23:14:46 Shadow exception!
+	Error from slot1_14@glidein_422372_493961418@node09.cluster: The job wrapper failed to execute the job: Wrapper script /mnt/beegfs/scratch/glide_lJKLU0/condor_job_wrapper.sh failed (1): ERROR   Unable to access the Singularity image: /cvmfs/singularity.opensciencegrid.org/arnaudbecheler/quetzal-open-science-grid:latest
+        Site and node: LSUHSC-Tigerfish-CE1 node09.cluster
+	0  -  Run Bytes Sent By Job
+	21034  -  Run Bytes Received By Job
+...
+040 (14742626.000.000) 2021-08-24 23:15:24 Started transferring input files
+	Transferring to host: <10.32.86.163:34602?CCBID=192.170.227.251:9886%3faddrs%3d192.170.227.251-9886+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9886%26alias%3dflock.opensciencegrid.org#1835878&PrivNet=d12chas584.crc.nd.edu&addrs=10.32.86.163-34602&alias=d12chas584.crc.nd.edu&noUDP>
+...
+040 (14742626.000.000) 2021-08-24 23:15:24 Finished transferring input files
+...
+001 (14742626.000.000) 2021-08-24 23:15:25 Job executing on host: <10.32.86.163:39365?CCBID=192.170.227.251:9887%3faddrs%3d192.170.227.251-9887+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9887%26alias%3dflock.opensciencegrid.org#1794102&PrivNet=d12chas584.crc.nd.edu&addrs=10.32.86.163-39365&alias=d12chas584.crc.nd.edu&noUDP>
+...
+006 (14742626.000.000) 2021-08-24 23:15:26 Image size of job updated: 1
 	3  -  MemoryUsage of job (MB)
-	3072  -  ResidentSetSize of job (KB)
+	3056  -  ResidentSetSize of job (KB)
 ...
-040 (14742103.000.000) 2021-08-24 22:49:51 Started transferring output files
+040 (14742626.000.000) 2021-08-24 23:15:26 Started transferring output files
 ...
-040 (14742103.000.000) 2021-08-24 22:49:51 Finished transferring output files
+040 (14742626.000.000) 2021-08-24 23:15:26 Finished transferring output files
 ...
-005 (14742103.000.000) 2021-08-24 22:50:11 Job terminated.
+005 (14742626.000.000) 2021-08-24 23:15:26 Job terminated.
 	(1) Normal termination (return value 1)
 		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
 		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
 		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
 		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
-	1675  -  Run Bytes Sent By Job
-	8746  -  Run Bytes Received By Job
-	1675  -  Total Bytes Sent By Job
-	8746  -  Total Bytes Received By Job
+	1796  -  Run Bytes Sent By Job
+	21034  -  Run Bytes Received By Job
+	1796  -  Total Bytes Sent By Job
+	42068  -  Total Bytes Received By Job
 	Partitionable Resources :    Usage  Request Allocated 
 	   Cpus                 :                 1         1 
-	   Disk (KB)            :     4218     1024    201135 
+	   Disk (KB)            :      208     1024   1903875 
 	   Memory (MB)          :        3    10240     10240 
 
-	Job terminated of its own accord at 2021-08-25T03:49:51Z.
+	Job terminated of its own accord at 2021-08-25T04:15:26Z.
 ...
