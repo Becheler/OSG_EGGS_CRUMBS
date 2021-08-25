@@ -1,23 +1,16 @@
-universe = vanilla
-executable = A.sh
-
-Requirements = HAS_SINGULARITY == TRUE
-+SingularityImage = "/cvmfs/singularity.opensciencegrid.org/arnaudbecheler/quetzal-open-science-grid:latest"
-
-should_transfer_files = YES
-WhenToTransferOutput = ON_EXIT
-
-transfer_input_files = input_files/suitability.tif, input_files/sample.csv, input_files/EGG1.conf, input_files/imap.txt
-
-transfer_output_files = output.db
+universe               = vanilla
+executable             = A.sh
+Requirements           = HAS_SINGULARITY == TRUE
++SingularityImage      = "/cvmfs/singularity.opensciencegrid.org/arnaudbecheler/quetzal-open-science-grid:latest"
+should_transfer_files  = YES
+WhenToTransferOutput   = ON_EXIT
+transfer_input_files   = input_files/suitability.tif, input_files/sample.csv, input_files/EGG1.conf, input_files/imap.txt
+transfer_output_files  = output.db
 transfer_output_remaps = "output.db = output_files/output.db"
-
-output = output_files/A.out
-error  = output_files/A.err
-log    = output_files/A.log
-
-request_cpus = 1
-request_memory = 10GB
-request_disk = 1MB
-
+output                 = output_files/A.out
+error                  = output_files/A.err
+log                    = output_files/A.log
+request_cpus           = 1
+request_memory         = 10GB
+request_disk           = 1MB
 queue
