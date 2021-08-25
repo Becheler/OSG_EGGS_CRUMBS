@@ -4,11 +4,11 @@ Requirements          = HAS_SINGULARITY == TRUE
 +SingularityImage     = "/cvmfs/singularity.opensciencegrid.org/arnaudbecheler/quetzal-open-science-grid:latest"
 should_transfer_files = YES
 WhenToTransferOutput  = ON_EXIT
-transfer_input_files  = output.db
+transfer_input_files  = output-$(i).db
 initialdir            = output_files
-output                = B.out
-error                 = B.err
-log                   = B.log
+output                = B-$(i).out
+error                 = B-$(i).err
+log                   = B-$(i).log
 request_cpus          = 1
 request_memory        = 10GB
 request_disk          = 1MB
