@@ -1,36 +1,35 @@
-000 (14742735.000.000) 2021-08-24 23:06:52 Job submitted from host: <192.170.227.166:9618?addrs=192.170.227.166-9618&alias=login04.osgconnect.net&noUDP&sock=schedd_485618_226e>
+000 (14746547.000.000) 2021-08-25 01:22:52 Job submitted from host: <192.170.227.166:9618?addrs=192.170.227.166-9618&alias=login04.osgconnect.net&noUDP&sock=schedd_485618_226e>
     DAG Node: B2
 ...
-040 (14742735.000.000) 2021-08-24 23:06:55 Started transferring input files
-	Transferring to host: <172.17.0.2:36469?CCBID=192.170.227.251:9703%3faddrs%3d192.170.227.251-9703+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9703%26alias%3dflock.opensciencegrid.org#1800915&PrivNet=TACC-Jetstream-Backfill-fcc86cc21122&addrs=172.17.0.2-36469&alias=TACC-Jetstream-Backfill-fcc86cc21122>
+040 (14746547.000.000) 2021-08-25 01:22:57 Started transferring input files
+	Transferring to host: <172.20.15.11:33437?CCBID=192.170.227.251:9710%3faddrs%3d192.170.227.251-9710+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9710%26alias%3dflock.opensciencegrid.org#1817098&PrivNet=c1511.rhino.hcc.unl.edu&addrs=172.20.15.11-33437&alias=c1511.rhino.hcc.unl.edu&noUDP>
 ...
-040 (14742735.000.000) 2021-08-24 23:06:55 Finished transferring input files
+040 (14746547.000.000) 2021-08-25 01:22:57 Finished transferring input files
 ...
-001 (14742735.000.000) 2021-08-24 23:06:56 Job executing on host: <172.17.0.2:33981?CCBID=192.170.227.251:9703%3faddrs%3d192.170.227.251-9703+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9703%26alias%3dflock.opensciencegrid.org#1796276&PrivNet=TACC-Jetstream-Backfill-fcc86cc21122&addrs=172.17.0.2-33981&alias=TACC-Jetstream-Backfill-fcc86cc21122>
+001 (14746547.000.000) 2021-08-25 01:22:58 Job executing on host: <172.20.15.11:32999?CCBID=192.170.227.251:9767%3faddrs%3d192.170.227.251-9767+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9767%26alias%3dflock.opensciencegrid.org#1778051&PrivNet=c1511.rhino.hcc.unl.edu&addrs=172.20.15.11-32999&alias=c1511.rhino.hcc.unl.edu&noUDP>
 ...
-006 (14742735.000.000) 2021-08-24 23:06:57 Image size of job updated: 55896
+006 (14746547.000.000) 2021-08-25 01:23:00 Image size of job updated: 117948
 	7  -  MemoryUsage of job (MB)
-	6708  -  ResidentSetSize of job (KB)
+	7068  -  ResidentSetSize of job (KB)
 ...
-040 (14742735.000.000) 2021-08-24 23:06:57 Started transferring output files
+040 (14746547.000.000) 2021-08-25 01:23:00 Started transferring output files
 ...
-040 (14742735.000.000) 2021-08-24 23:06:57 Finished transferring output files
+040 (14746547.000.000) 2021-08-25 01:23:00 Finished transferring output files
 ...
-005 (14742735.000.000) 2021-08-24 23:06:57 Job terminated.
-	(1) Normal termination (return value 90)
+005 (14746547.000.000) 2021-08-25 01:23:00 Job terminated.
+	(1) Normal termination (return value 1)
 		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
 		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
 		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
 		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
-	891  -  Run Bytes Sent By Job
-	8746  -  Run Bytes Received By Job
-	891  -  Total Bytes Sent By Job
-	8746  -  Total Bytes Received By Job
+	176  -  Run Bytes Sent By Job
+	21016  -  Run Bytes Received By Job
+	176  -  Total Bytes Sent By Job
+	21016  -  Total Bytes Received By Job
 	Partitionable Resources :    Usage  Request Allocated 
 	   Cpus                 :                 1         1 
-	   Disk (KB)            :       29     1024     54629 
-	   GPUs                 :                           0 
-	   Memory (MB)          :        7    10240     10240 
+	   Disk (KB)            :      205     1024   1645659 
+	   Memory (MB)          :        7     1024     10240 
 
-	Job terminated of its own accord at 2021-08-25T04:06:56Z.
+	Job terminated of its own accord at 2021-08-25T06:23:00Z.
 ...

@@ -1,39 +1,60 @@
-000 (14742122.000.000) 2021-08-24 23:00:02 Job submitted from host: <192.170.227.166:9618?addrs=192.170.227.166-9618&alias=login04.osgconnect.net&noUDP&sock=schedd_485618_226e>
+000 (14746532.000.000) 2021-08-25 01:18:31 Job submitted from host: <192.170.227.166:9618?addrs=192.170.227.166-9618&alias=login04.osgconnect.net&noUDP&sock=schedd_485618_226e>
     DAG Node: A1
 ...
-040 (14742122.000.000) 2021-08-24 23:00:35 Started transferring input files
-	Transferring to host: <172.20.7.17:39524?CCBID=192.170.227.251:9764%3faddrs%3d192.170.227.251-9764+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9764%26alias%3dflock.opensciencegrid.org#1789461&PrivNet=c0717.rhino.hcc.unl.edu&addrs=172.20.7.17-39524&alias=c0717.rhino.hcc.unl.edu&noUDP>
+040 (14746532.000.000) 2021-08-25 01:19:41 Started transferring input files
+	Transferring to host: <128.104.101.173:32924?CCBID=192.170.227.251:9860%3faddrs%3d192.170.227.251-9860+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9860%26alias%3dflock.opensciencegrid.org#1805748&PrivNet=hpc403.chtc.wisc.edu&addrs=128.104.101.173-32924&alias=hpc403.chtc.wisc.edu&noUDP>
 ...
-040 (14742122.000.000) 2021-08-24 23:00:35 Finished transferring input files
+040 (14746532.000.000) 2021-08-25 01:19:44 Finished transferring input files
 ...
-001 (14742122.000.000) 2021-08-24 23:00:36 Job executing on host: <172.20.7.17:35020?CCBID=192.170.227.251:9891%3faddrs%3d192.170.227.251-9891+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9891%26alias%3dflock.opensciencegrid.org#1779380&PrivNet=c0717.rhino.hcc.unl.edu&addrs=172.20.7.17-35020&alias=c0717.rhino.hcc.unl.edu&noUDP>
+001 (14746532.000.000) 2021-08-25 01:19:45 Job executing on host: <128.104.101.173:36806?CCBID=192.170.227.251:9868%3faddrs%3d192.170.227.251-9868+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9868%26alias%3dflock.opensciencegrid.org#1752861&PrivNet=hpc403.chtc.wisc.edu&addrs=128.104.101.173-36806&alias=hpc403.chtc.wisc.edu&noUDP>
 ...
-006 (14742122.000.000) 2021-08-24 23:00:44 Image size of job updated: 1
-	7  -  MemoryUsage of job (MB)
-	6796  -  ResidentSetSize of job (KB)
+006 (14746532.000.000) 2021-08-25 01:19:54 Image size of job updated: 1
+	4  -  MemoryUsage of job (MB)
+	3188  -  ResidentSetSize of job (KB)
 ...
-006 (14742122.000.000) 2021-08-24 23:04:17 Image size of job updated: 7548868
-	5128  -  MemoryUsage of job (MB)
-	5250604  -  ResidentSetSize of job (KB)
+006 (14746532.000.000) 2021-08-25 01:24:54 Image size of job updated: 63128
+	4  -  MemoryUsage of job (MB)
+	3188  -  ResidentSetSize of job (KB)
 ...
-040 (14742122.000.000) 2021-08-24 23:04:17 Started transferring output files
-...
-040 (14742122.000.000) 2021-08-24 23:04:17 Finished transferring output files
-...
-005 (14742122.000.000) 2021-08-24 23:04:17 Job terminated.
-	(1) Normal termination (return value 0)
-		Usr 0 00:02:55, Sys 0 00:00:21  -  Run Remote Usage
-		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
-		Usr 0 00:02:55, Sys 0 00:00:21  -  Total Remote Usage
-		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
-	8663  -  Run Bytes Sent By Job
+007 (14746532.000.000) 2021-08-25 01:33:05 Shadow exception!
+	Error from slot1_11@glidein_42864_66231308@hpc403.chtc.wisc.edu: The job wrapper failed to execute the job: Wrapper script /scratch/local/osgvopilot/glide_yCaOjO/condor_job_wrapper.sh failed (1): ERROR   Unable to access the Singularity image: /cvmfs/singularity.opensciencegrid.org/arnaudbecheler/quetzal-open-science-grid:latest
+        Site and node: CHTC-canary2 hpc403.chtc.wisc.edu
+	0  -  Run Bytes Sent By Job
 	102228  -  Run Bytes Received By Job
-	8663  -  Total Bytes Sent By Job
-	102228  -  Total Bytes Received By Job
+...
+040 (14746532.000.000) 2021-08-25 01:33:39 Started transferring input files
+	Transferring to host: <10.5.215.191:38622?CCBID=192.170.227.251:9821%3faddrs%3d192.170.227.251-9821+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9821%26alias%3dflock.opensciencegrid.org#1771797&PrivNet=CRUSH-OSG-C7-10-5-215-191&addrs=10.5.215.191-38622&alias=CRUSH-OSG-C7-10-5-215-191&noUDP>
+...
+040 (14746532.000.000) 2021-08-25 01:33:39 Finished transferring input files
+...
+001 (14746532.000.000) 2021-08-25 01:33:40 Job executing on host: <10.5.215.191:42728?CCBID=192.170.227.251:9822%3faddrs%3d192.170.227.251-9822+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9822%26alias%3dflock.opensciencegrid.org#1751909&PrivNet=CRUSH-OSG-C7-10-5-215-191&addrs=10.5.215.191-42728&alias=CRUSH-OSG-C7-10-5-215-191&noUDP>
+...
+006 (14746532.000.000) 2021-08-25 01:33:49 Image size of job updated: 1000188
+	99  -  MemoryUsage of job (MB)
+	100712  -  ResidentSetSize of job (KB)
+...
+006 (14746532.000.000) 2021-08-25 01:37:33 Image size of job updated: 6652480
+	5192  -  MemoryUsage of job (MB)
+	5316108  -  ResidentSetSize of job (KB)
+...
+040 (14746532.000.000) 2021-08-25 01:37:33 Started transferring output files
+...
+040 (14746532.000.000) 2021-08-25 01:37:34 Finished transferring output files
+...
+005 (14746532.000.000) 2021-08-25 01:37:34 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:03:27, Sys 0 00:00:09  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:03:27, Sys 0 00:00:09  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	21632  -  Run Bytes Sent By Job
+	102228  -  Run Bytes Received By Job
+	21632  -  Total Bytes Sent By Job
+	204456  -  Total Bytes Received By Job
 	Partitionable Resources :    Usage  Request Allocated 
-	   Cpus                 :     0.96        1         1 
-	   Disk (KB)            :   311        1024   1908976 
-	   Memory (MB)          :  5128       10240     10240 
+	   Cpus                 :     1.00        1         1 
+	   Disk (KB)            :  4355        1024    201135 
+	   Memory (MB)          :  5192       10240     10240 
 
-	Job terminated of its own accord at 2021-08-25T04:04:17Z.
+	Job terminated of its own accord at 2021-08-25T06:37:33Z.
 ...

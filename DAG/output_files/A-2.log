@@ -1,39 +1,39 @@
-000 (14742123.000.000) 2021-08-24 23:00:03 Job submitted from host: <192.170.227.166:9618?addrs=192.170.227.166-9618&alias=login04.osgconnect.net&noUDP&sock=schedd_485618_226e>
+000 (14746533.000.000) 2021-08-25 01:18:31 Job submitted from host: <192.170.227.166:9618?addrs=192.170.227.166-9618&alias=login04.osgconnect.net&noUDP&sock=schedd_485618_226e>
     DAG Node: A2
 ...
-040 (14742123.000.000) 2021-08-24 23:00:36 Started transferring input files
-	Transferring to host: <10.5.215.191:39280?CCBID=192.170.227.251:9806%3faddrs%3d192.170.227.251-9806+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9806%26alias%3dflock.opensciencegrid.org#1758223&PrivNet=CRUSH-OSG-C7-10-5-215-191&addrs=10.5.215.191-39280&alias=CRUSH-OSG-C7-10-5-215-191&noUDP>
+040 (14746533.000.000) 2021-08-25 01:19:18 Started transferring input files
+	Transferring to host: <172.20.15.11:45714?CCBID=192.170.227.251:9872%3faddrs%3d192.170.227.251-9872+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9872%26alias%3dflock.opensciencegrid.org#1792364&PrivNet=c1511.rhino.hcc.unl.edu&addrs=172.20.15.11-45714&alias=c1511.rhino.hcc.unl.edu&noUDP>
 ...
-040 (14742123.000.000) 2021-08-24 23:00:36 Finished transferring input files
+040 (14746533.000.000) 2021-08-25 01:19:18 Finished transferring input files
 ...
-001 (14742123.000.000) 2021-08-24 23:00:37 Job executing on host: <10.5.215.191:42728?CCBID=192.170.227.251:9822%3faddrs%3d192.170.227.251-9822+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9822%26alias%3dflock.opensciencegrid.org#1751909&PrivNet=CRUSH-OSG-C7-10-5-215-191&addrs=10.5.215.191-42728&alias=CRUSH-OSG-C7-10-5-215-191&noUDP>
+001 (14746533.000.000) 2021-08-25 01:19:19 Job executing on host: <172.20.15.11:32999?CCBID=192.170.227.251:9767%3faddrs%3d192.170.227.251-9767+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9767%26alias%3dflock.opensciencegrid.org#1778051&PrivNet=c1511.rhino.hcc.unl.edu&addrs=172.20.15.11-32999&alias=c1511.rhino.hcc.unl.edu&noUDP>
 ...
-006 (14742123.000.000) 2021-08-24 23:00:45 Image size of job updated: 656124
-	28  -  MemoryUsage of job (MB)
-	28664  -  ResidentSetSize of job (KB)
+006 (14746533.000.000) 2021-08-25 01:19:28 Image size of job updated: 1947488
+	67  -  MemoryUsage of job (MB)
+	67880  -  ResidentSetSize of job (KB)
 ...
-006 (14742123.000.000) 2021-08-24 23:05:45 Image size of job updated: 9472508
-	8458  -  MemoryUsage of job (MB)
-	8660260  -  ResidentSetSize of job (KB)
+006 (14746533.000.000) 2021-08-25 01:22:43 Image size of job updated: 7618008
+	5154  -  MemoryUsage of job (MB)
+	5276684  -  ResidentSetSize of job (KB)
 ...
-040 (14742123.000.000) 2021-08-24 23:06:45 Started transferring output files
+040 (14746533.000.000) 2021-08-25 01:22:44 Started transferring output files
 ...
-040 (14742123.000.000) 2021-08-24 23:06:45 Finished transferring output files
+040 (14746533.000.000) 2021-08-25 01:22:44 Finished transferring output files
 ...
-005 (14742123.000.000) 2021-08-24 23:06:45 Job terminated.
+005 (14746533.000.000) 2021-08-25 01:22:44 Job terminated.
 	(1) Normal termination (return value 0)
-		Usr 0 00:05:40, Sys 0 00:00:15  -  Run Remote Usage
+		Usr 0 00:02:59, Sys 0 00:00:06  -  Run Remote Usage
 		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
-		Usr 0 00:05:40, Sys 0 00:00:15  -  Total Remote Usage
+		Usr 0 00:02:59, Sys 0 00:00:06  -  Total Remote Usage
 		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
-	9325  -  Run Bytes Sent By Job
+	20971  -  Run Bytes Sent By Job
 	102228  -  Run Bytes Received By Job
-	9325  -  Total Bytes Sent By Job
+	20971  -  Total Bytes Sent By Job
 	102228  -  Total Bytes Received By Job
 	Partitionable Resources :    Usage  Request Allocated 
-	   Cpus                 :     1.00        1         1 
-	   Disk (KB)            :  4340        1024    201135 
-	   Memory (MB)          :  8458       10240     10240 
+	   Cpus                 :     0.19        1         1 
+	   Disk (KB)            :   323        1024   1645659 
+	   Memory (MB)          :  5154       10240     10240 
 
-	Job terminated of its own accord at 2021-08-25T04:06:45Z.
+	Job terminated of its own accord at 2021-08-25T06:22:43Z.
 ...

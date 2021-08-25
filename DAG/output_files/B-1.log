@@ -1,39 +1,35 @@
-000 (14742688.000.000) 2021-08-24 23:04:27 Job submitted from host: <192.170.227.166:9618?addrs=192.170.227.166-9618&alias=login04.osgconnect.net&noUDP&sock=schedd_485618_226e>
+000 (14746910.000.000) 2021-08-25 01:37:44 Job submitted from host: <192.170.227.166:9618?addrs=192.170.227.166-9618&alias=login04.osgconnect.net&noUDP&sock=schedd_485618_226e>
     DAG Node: B1
 ...
-040 (14742688.000.000) 2021-08-24 23:04:35 Entered queue to transfer input files
-	Transferring to host: <172.20.7.25:46212?CCBID=192.170.227.251:9821%3faddrs%3d192.170.227.251-9821+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9821%26alias%3dflock.opensciencegrid.org#1771466&PrivNet=c0725.rhino.hcc.unl.edu&addrs=172.20.7.25-46212&alias=c0725.rhino.hcc.unl.edu&noUDP>
+040 (14746910.000.000) 2021-08-25 01:37:55 Started transferring input files
+	Transferring to host: <10.5.215.191:45635?CCBID=192.170.227.251:9714%3faddrs%3d192.170.227.251-9714+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9714%26alias%3dflock.opensciencegrid.org#1764087&PrivNet=CRUSH-OSG-C7-10-5-215-191&addrs=10.5.215.191-45635&alias=CRUSH-OSG-C7-10-5-215-191&noUDP>
 ...
-040 (14742688.000.000) 2021-08-24 23:04:35 Started transferring input files
-	Seconds spent in queue: 0
+040 (14746910.000.000) 2021-08-25 01:37:55 Finished transferring input files
 ...
-040 (14742688.000.000) 2021-08-24 23:04:35 Finished transferring input files
+001 (14746910.000.000) 2021-08-25 01:37:56 Job executing on host: <10.5.215.191:42728?CCBID=192.170.227.251:9822%3faddrs%3d192.170.227.251-9822+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9822%26alias%3dflock.opensciencegrid.org#1751909&PrivNet=CRUSH-OSG-C7-10-5-215-191&addrs=10.5.215.191-42728&alias=CRUSH-OSG-C7-10-5-215-191&noUDP>
 ...
-001 (14742688.000.000) 2021-08-24 23:04:36 Job executing on host: <172.20.7.25:36554?CCBID=192.170.227.251:9760%3faddrs%3d192.170.227.251-9760+[2605-9a00-10-400d-7686-7aff-fedd-d118]-9760%26alias%3dflock.opensciencegrid.org#1751012&PrivNet=c0725.rhino.hcc.unl.edu&addrs=172.20.7.25-36554&alias=c0725.rhino.hcc.unl.edu&noUDP>
+006 (14746910.000.000) 2021-08-25 01:37:57 Image size of job updated: 1
+	4  -  MemoryUsage of job (MB)
+	3088  -  ResidentSetSize of job (KB)
 ...
-006 (14742688.000.000) 2021-08-24 23:04:38 Image size of job updated: 1
-	7  -  MemoryUsage of job (MB)
-	6972  -  ResidentSetSize of job (KB)
+040 (14746910.000.000) 2021-08-25 01:37:57 Started transferring output files
 ...
-040 (14742688.000.000) 2021-08-24 23:04:38 Started transferring output files
-	Seconds spent in queue: 3
+040 (14746910.000.000) 2021-08-25 01:37:57 Finished transferring output files
 ...
-040 (14742688.000.000) 2021-08-24 23:04:38 Finished transferring output files
-...
-005 (14742688.000.000) 2021-08-24 23:04:38 Job terminated.
+005 (14746910.000.000) 2021-08-25 01:37:57 Job terminated.
 	(1) Normal termination (return value 1)
 		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
 		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
 		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
 		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
-	1014  -  Run Bytes Sent By Job
-	8746  -  Run Bytes Received By Job
-	1014  -  Total Bytes Sent By Job
-	8746  -  Total Bytes Received By Job
+	837  -  Run Bytes Sent By Job
+	21016  -  Run Bytes Received By Job
+	837  -  Total Bytes Sent By Job
+	21016  -  Total Bytes Received By Job
 	Partitionable Resources :    Usage  Request Allocated 
 	   Cpus                 :                 1         1 
-	   Disk (KB)            :      194     1024   1900677 
-	   Memory (MB)          :        7    10240     10240 
+	   Disk (KB)            :     4229     1024    201135 
+	   Memory (MB)          :        4     1024     10240 
 
-	Job terminated of its own accord at 2021-08-25T04:04:38Z.
+	Job terminated of its own accord at 2021-08-25T06:37:57Z.
 ...

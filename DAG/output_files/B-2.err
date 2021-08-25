@@ -1,12 +1,1 @@
-Traceback (most recent call last):
-  File "/usr/lib/python3.8/runpy.py", line 194, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/lib/python3.8/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/local/lib/python3.8/dist-packages/crumbs/get_successful_simulations_rowids.py", line 46, in <module>
-    main(sys.argv[1:])
-  File "/usr/local/lib/python3.8/dist-packages/crumbs/get_successful_simulations_rowids.py", line 42, in main
-    return get_successful_simulations_rowids(options.database, options.table)
-  File "/usr/local/lib/python3.8/dist-packages/crumbs/get_successful_simulations_rowids.py", line 25, in get_successful_simulations_rowids
-    cursor.execute("SELECT rowid, * FROM quetzal_EGG_1 WHERE newicks <> '';")
-sqlite3.OperationalError: no such table: quetzal_EGG_1
+WARNING  glidein_config not defined () in singularity_lib.sh. Some functions like advertise and error_gen will be limited.
