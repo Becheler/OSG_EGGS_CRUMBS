@@ -1,3 +1,0 @@
-"python3": executable file not found in $PATH
-WARNING  glidein_config not defined () in singularity_lib.sh. Some functions like advertise and error_gen will be limited.
-/srv/condor_exec.exe: line 14: /usr/local/quetzal-EGGS/EGG1: No such file or directory

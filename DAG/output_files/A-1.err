@@ -1,3 +1,0 @@
-declare: invalid name "BASH_FUNC_module()"
-declare: invalid name "}"
-WARNING  glidein_config not defined () in singularity_lib.sh. Some functions like advertise and error_gen will be limited.

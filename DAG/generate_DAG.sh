@@ -13,4 +13,5 @@ do
    echo "PARENT A$i CHILD B$i"
    echo "PARENT B$i CHILD C$i"
    echo "PARENT C$i CHILD D$i"
+   echo "Retry A$i 10"
 done
