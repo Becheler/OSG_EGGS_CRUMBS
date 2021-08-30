@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for i in {1..10}
+for i in {1..1000}
 do
    echo "JOB A$i A.condor"
    echo "VARS A$i i=\"$i\""
@@ -13,5 +13,5 @@ do
    echo "PARENT A$i CHILD B$i"
    echo "PARENT B$i CHILD C$i"
    echo "PARENT C$i CHILD D$i"
-   echo "Retry A$i 10"
+   echo "Retry A$i 100"
 done
