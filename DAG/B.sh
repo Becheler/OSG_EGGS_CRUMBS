@@ -2,7 +2,7 @@
 
 echoerr() { echo "$@" 1>&2; }
 
-rowids=($(python3 -m crumbs.get_successful_simulations_rowids --database $1 --table "quetzal_EGG_1" | tr -d '[],'))
+rowids=$(python3 -m crumbs.get_successful_simulations_rowids --database $1 --table "quetzal_EGG_1" | tr -d '[],')
 echo "Rowids: $rowids"
 if [[ -z "$rowids" ]]; then 
   echoerr $1": no newick formulas found in database."
