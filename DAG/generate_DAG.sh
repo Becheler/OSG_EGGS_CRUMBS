@@ -8,10 +8,7 @@ do
    echo "VARS B$i i=\"$i\""
    echo "JOB C$i C.condor"
    echo "VARS C$i i=\"$i\""
-   echo "JOB D$i D.condor"
-   echo "VARS D$i i=\"$i\""
    echo "PARENT A$i CHILD B$i"
    echo "PARENT B$i CHILD C$i"
-   echo "PARENT C$i CHILD D$i"
    echo "Retry A$i 100"
 done

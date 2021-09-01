@@ -1,18 +1,16 @@
 #!/bin/bash
 
-tar -xzf phylip.tar.gz
-mkdir arlequin
+tar -xzf arlequin.tar.gz
 
 rowids=$(python3 -m crumbs.get_successful_simulations_rowids --database "output.db" --table "quetzal_EGG_1")
 
 for i in $rowids
 do
-  
-  python3 -m crumbs.phylip2arlequin \
-  --input "phylip/pod_"$i".phyl" \
-  --imap "imap.txt" \
-  --output "arlequin/pod_"$i".arp"
+
+  if [ $i -eq ${rowids[0]} ]; then
+      ./arlsumstat3522_64bit "arlequin/pod_"$i".arp" outSS 0 1 run_silent
+   else
+      ./arlsumstat3522_64bit "arlequin/pod_"$i".arp" outSS 1 0 run_silent
+   fi
 
 done
-
-tar -czf arlequin.tar.gz arlequin

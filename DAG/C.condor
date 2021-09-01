@@ -1,15 +1,15 @@
 universe               = vanilla
-executable             = C.sh
+executable             = D.sh 
 Requirements           = HAS_SINGULARITY == TRUE
 +SingularityImage      = "/cvmfs/singularity.opensciencegrid.org/arnaudbecheler/quetzal-open-science-grid:latest"
 should_transfer_files  = YES
+transfer_input_files   = arlsumstat3522_64bit, output_files/arlequin-$(i).tar.gz
 WhenToTransferOutput   = ON_EXIT
-transfer_input_files   = output_files/output-$(i).db, input_files/imap.txt, output_files/phylip-$(i).tar.gz
-arguments              = phylip-(i).tar.gz output-$(i).db imap.txt
-transfer_output_remaps = "arlequin.tar.gz = output_files/arlequin-$(i).tar.gz"
-output                 = output_files/C-$(i).out
-error                  = output_files/C-$(i).err
-log                    = output_files/C-$(i).log
+transfer_output_files  = outSS
+transfer_output_remaps = "outSS = output_files/outSS-$(i)"
+output                 = output_files/D-$(i).out
+error                  = output_files/D-$(i).err
+log                    = output_files/D-$(i).log
 request_cpus           = 1
 request_memory         = 1GB
 request_disk           = 1MB
