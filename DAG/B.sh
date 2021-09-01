@@ -25,6 +25,7 @@ if ((${#rowids[@]})); then
     if [ -s "phylip/pod_"$i".phyl" ]
     then 
       echo "Database "$1", rowid "$i": PHYLIP file phylip/pod_"$i".phyl exists and looks OK. Continuing to ARLEQUIN."
+      # Converting to ARLEQUIN
       python3 -m crumbs.phylip2arlequin \
       --input "phylip/pod_"$i".phyl" \
       --imap "imap.txt" \
@@ -37,7 +38,12 @@ if ((${#rowids[@]})); then
   done
   echo "Database "$1": compressing ARLEQUIN files."
   tar -czvf arlequin.tar.gz arlequin
-  echo "Database "$1": archive arlequin.tar.gz created."
+  echo "Database "$1": archive arlequin.tar.gz created. Computing SUMSTATS."
+  if [ $i -eq ${rowids[0]} ]; then
+      ./arlsumstat3522_64bit "arlequin/pod_"$i".arp" outSS 0 1 run_silent
+   else
+      ./arlsumstat3522_64bit "arlequin/pod_"$i".arp" outSS 1 0 run_silent
+   fi
 else
   echoerr "Database "$1": rowids array is empty. No newick formulas found in database. Exiting with code 1."
   exit 1
