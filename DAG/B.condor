@@ -4,9 +4,9 @@ Requirements          = HAS_SINGULARITY == TRUE
 +SingularityImage     = "/cvmfs/singularity.opensciencegrid.org/arnaudbecheler/quetzal-open-science-grid:latest"
 should_transfer_files = YES
 WhenToTransferOutput  = ON_EXIT
-transfer_input_files  = output_files/output-$(i).db
+transfer_input_files  = output_files/output-$(i).db input_files/imap.txt
 arguments             = output-$(i).db
-transfer_output_remaps = "phylip.tar.gz = output_files/phylip-$(i).tar.gz"
+transfer_output_remaps = "arlequin.tar.gz = output_files/arlequin-$(i).tar.gz"
 output                = output_files/B-$(i).out
 error                 = output_files/B-$(i).err
 log                   = output_files/B-$(i).log
