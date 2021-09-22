@@ -4,7 +4,7 @@ Requirements             = HAS_SINGULARITY == TRUE
 +SingularityImage        = "/cvmfs/singularity.opensciencegrid.org/arnaudbecheler/quetzal-open-science-grid:0.0.12"
 should_transfer_files    = YES
 when_to_transfer_output  = ON_EXIT
-transfer_input_files     = output_files/output-$(i).db, input_files/imap.txt, arlsumstat3522_64bit
+transfer_input_files     = output_files/output-$(i).db, input_files/imap.txt, arlsumstat3522_64bit, input_files/ssdefs.txt, input_files/arl_run.ars
 arguments                = output-$(i).db
 transfer_output_files    = outSS
 transfer_output_remaps   = "outSS = output_files/sumstats-$(i).txt"

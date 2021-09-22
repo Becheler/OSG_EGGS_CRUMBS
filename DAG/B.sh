@@ -23,6 +23,8 @@ if (( ${#rowids[@]} != 0 )); then
     --output "phylip/pod_"$i".phyl"
     # If PHYLIP files looks normal
     cat phylip/pod_"$i".phyl
+    head -n -1 phylip/pod_"$i".phyl > temp.txt ; mv temp.txt phylip/pod_"$i".phyl
+    cat phylip/pod_"$i".phyl
     if [ -s "phylip/pod_"$i".phyl" ]
     then 
       echo "Database "$1", rowid "$i": PHYLIP file phylip/pod_"$i".phyl exists and looks legit. Creating folder </arlequin> for format conversion."
@@ -32,20 +34,19 @@ if (( ${#rowids[@]} != 0 )); then
       --input "phylip/pod_"$i".phyl" \
       --imap "imap.txt" \
       --output "arlequin/pod_"$i".arp"
-    else
+      cat arlequin/pod_"$i".arp
+     else
       echo "Database "$1", rowid "$i": PHYLIP file phylip/pod_"$i".phyl does not exist, or is empty. Exiting iteration with code 1."
       echoerr "Database "$1", rowid "$i": PHYLIP file phylip/pod_"$i".phyl does not exist, or is empty. Exiting iteration with code 1."
       exit 1
     fi
   done # all rowids have be iterated
-  echo "Database "$1": compressing ARLEQUIN files."
-  tar -czvf arlequin.tar.gz arlequin
-  echo "Database "$1": archive arlequin.tar.gz created. Computing SUMSTATS."
+  echo "Database "$1": computing SUMSTATS."
   # Compute summary statistics:
   if [ $i -eq ${rowids[0]} ]; then
-      ./arlsumstat3522_64bit "arlequin/pod_"$i".arp" outSS 0 1 #run_silent
+      ./arlsumstat3522_64bit "arlequin/pod_"$i".arp" outSS 0 1
    else
-      ./arlsumstat3522_64bit "arlequin/pod_"$i".arp" outSS 1 0 #run_silent
+      ./arlsumstat3522_64bit "arlequin/pod_"$i".arp" outSS 1 0
    fi
 else
   echoerr "Database "$1": rowids array is empty. No newick formulas found in database. Exiting with code 1."
