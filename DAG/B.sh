@@ -3,6 +3,7 @@
 echoerr() { echo "$@" 1>&2; }
 
 echo "Database "$1": --------------------------------------------------------------------------"
+counter = 1
 rowids=$(python3 -m crumbs.get_successful_simulations_rowids --database $1 --table "quetzal_EGG_1" | tr -d '[],')
 if (( ${#rowids[@]} != 0 )); then
   echo  "Database "$1": newick formulas found in database, array is not empty, iteration possible."
@@ -25,8 +26,7 @@ if (( ${#rowids[@]} != 0 )); then
     cat phylip/pod_"$i".phyl
     head -n -1 phylip/pod_"$i".phyl > temp.txt ; mv temp.txt phylip/pod_"$i".phyl
     cat phylip/pod_"$i".phyl
-    if [ -s "phylip/pod_"$i".phyl" ]
-    then 
+    if [ -s "phylip/pod_"$i".phyl" ]; then
       echo "Database "$1", rowid "$i": PHYLIP file phylip/pod_"$i".phyl exists and looks legit. Creating folder </arlequin> for format conversion."
       # Converting to ARLEQUIN
       mkdir -p arlequin
@@ -37,12 +37,15 @@ if (( ${#rowids[@]} != 0 )); then
       cat arlequin/pod_"$i".arp
       echo "Database "$1": computing SUMSTATS."
       # Compute summary statistics:
-      if [ $i -eq ${rowids[0]} ]; then
-        ./arlsumstat3522_64bit "arlequin/pod_"$i".arp" outSS 0 1
+      if [ $counter -eq 1 ]; then
+        # compute stats and include header
+        ./arlsumstat3522_64bit "arlequin/pod_"$i".arp" outSS 0 1 run_silent
       else
-        ./arlsumstat3522_64bit "arlequin/pod_"$i".arp" outSS 1 0
+        # Compute stats and just append stats in output
+        ./arlsumstat3522_64bit "arlequin/pod_"$i".arp" outSS 1 0 run_silent
       fi
-     else
+      let counter=couter+1
+    else
       echo "Database "$1", rowid "$i": PHYLIP file phylip/pod_"$i".phyl does not exist, or is empty. Exiting iteration with code 1."
       echoerr "Database "$1", rowid "$i": PHYLIP file phylip/pod_"$i".phyl does not exist, or is empty. Exiting iteration with code 1."
       exit 1
