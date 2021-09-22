@@ -35,19 +35,19 @@ if (( ${#rowids[@]} != 0 )); then
       --imap "imap.txt" \
       --output "arlequin/pod_"$i".arp"
       cat arlequin/pod_"$i".arp
+      echo "Database "$1": computing SUMSTATS."
+      # Compute summary statistics:
+      if [ $i -eq ${rowids[0]} ]; then
+        ./arlsumstat3522_64bit "arlequin/pod_"$i".arp" outSS 0 1
+      else
+        ./arlsumstat3522_64bit "arlequin/pod_"$i".arp" outSS 1 0
+      fi
      else
       echo "Database "$1", rowid "$i": PHYLIP file phylip/pod_"$i".phyl does not exist, or is empty. Exiting iteration with code 1."
       echoerr "Database "$1", rowid "$i": PHYLIP file phylip/pod_"$i".phyl does not exist, or is empty. Exiting iteration with code 1."
       exit 1
     fi
   done # all rowids have be iterated
-  echo "Database "$1": computing SUMSTATS."
-  # Compute summary statistics:
-  if [ $i -eq ${rowids[0]} ]; then
-      ./arlsumstat3522_64bit "arlequin/pod_"$i".arp" outSS 0 1
-   else
-      ./arlsumstat3522_64bit "arlequin/pod_"$i".arp" outSS 1 0
-   fi
 else
   echoerr "Database "$1": rowids array is empty. No newick formulas found in database. Exiting with code 1."
   exit 1
