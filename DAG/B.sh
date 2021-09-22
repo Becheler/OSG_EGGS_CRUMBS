@@ -2,18 +2,18 @@
 
 echoerr() { echo "$@" 1>&2; }
 
+echo "Database "$1": --------------------------------------------------------------------------"
 rowids=$(python3 -m crumbs.get_successful_simulations_rowids --database $1 --table "quetzal_EGG_1" | tr -d '[],')
-if ((${#rowids[@]})); then
-  echo  "Database "$1": newick formulas found in database, array is not empty, iteration possible. Creating folder phylip."
-  mkdir phylip
-  mkdir arlequin
+if (( ${#rowids[@]} != 0 )); then
+  echo  "Database "$1": newick formulas found in database, array is not empty, iteration possible."
   for i in $rowids
   do
     echo "Database "$1", rowid "$i": sampling s prior."
     s=$(python3 -m crumbs.sample "uniform_real" 0.00025 0.0000025)
     echo "Database "$1", rowid "$i": s = "$s"."
-    echo "Database "$1", rowid "$i": about to simulate PHYLIP sequences."
+    echo "Database "$1", rowid "$i": simulating PHYLIP sequences in folder </phylip>."
     # simulate PHYLIP
+    mkdir -p phylip
     python3 -m crumbs.simulate_phylip_sequences \
     --database $1 \
     --table "quetzal_EGG_1" \
@@ -22,10 +22,12 @@ if ((${#rowids[@]})); then
     --scale_tree $s \
     --output "phylip/pod_"$i".phyl"
     # If PHYLIP files looks normal
+    cat phylip/pod_"$i".phyl
     if [ -s "phylip/pod_"$i".phyl" ]
     then 
-      echo "Database "$1", rowid "$i": PHYLIP file phylip/pod_"$i".phyl exists and looks OK. Continuing to ARLEQUIN."
+      echo "Database "$1", rowid "$i": PHYLIP file phylip/pod_"$i".phyl exists and looks legit. Creating folder </arlequin> for format conversion."
       # Converting to ARLEQUIN
+      mkdir -p arlequin
       python3 -m crumbs.phylip2arlequin \
       --input "phylip/pod_"$i".phyl" \
       --imap "imap.txt" \
@@ -35,14 +37,15 @@ if ((${#rowids[@]})); then
       echoerr "Database "$1", rowid "$i": PHYLIP file phylip/pod_"$i".phyl does not exist, or is empty. Exiting iteration with code 1."
       exit 1
     fi
-  done
+  done # all rowids have be iterated
   echo "Database "$1": compressing ARLEQUIN files."
   tar -czvf arlequin.tar.gz arlequin
   echo "Database "$1": archive arlequin.tar.gz created. Computing SUMSTATS."
+  # Compute summary statistics:
   if [ $i -eq ${rowids[0]} ]; then
-      ./arlsumstat3522_64bit "arlequin/pod_"$i".arp" outSS 0 1 run_silent
+      ./arlsumstat3522_64bit "arlequin/pod_"$i".arp" outSS 0 1 #run_silent
    else
-      ./arlsumstat3522_64bit "arlequin/pod_"$i".arp" outSS 1 0 run_silent
+      ./arlsumstat3522_64bit "arlequin/pod_"$i".arp" outSS 1 0 #run_silent
    fi
 else
   echoerr "Database "$1": rowids array is empty. No newick formulas found in database. Exiting with code 1."
