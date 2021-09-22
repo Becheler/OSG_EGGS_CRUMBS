@@ -3,7 +3,7 @@
 echoerr() { echo "$@" 1>&2; }
 
 echo "Database "$1": --------------------------------------------------------------------------"
-counter = 1
+counter=1
 rowids=$(python3 -m crumbs.get_successful_simulations_rowids --database $1 --table "quetzal_EGG_1" | tr -d '[],')
 if (( ${#rowids[@]} != 0 )); then
   echo  "Database "$1": newick formulas found in database, array is not empty, iteration possible."
@@ -44,7 +44,7 @@ if (( ${#rowids[@]} != 0 )); then
         # Compute stats and just append stats in output
         ./arlsumstat3522_64bit "arlequin/pod_"$i".arp" outSS 1 0 run_silent
       fi
-      let counter=couter+1
+      let "counter+=1"
     else
       echo "Database "$1", rowid "$i": PHYLIP file phylip/pod_"$i".phyl does not exist, or is empty. Exiting iteration with code 1."
       echoerr "Database "$1", rowid "$i": PHYLIP file phylip/pod_"$i".phyl does not exist, or is empty. Exiting iteration with code 1."
