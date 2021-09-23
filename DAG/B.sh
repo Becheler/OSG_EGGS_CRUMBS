@@ -40,9 +40,19 @@ if (( ${#rowids[@]} != 0 )); then
       if [ $counter -eq 1 ]; then
         # compute stats and include header
         ./arlsumstat3522_64bit "arlequin/pod_"$i".arp" outSS 0 1 run_silent
+        python3 -m crumbs.retrieve_parameters \
+        --database $1 \
+        --table "quetzal_EGG_1" \
+        --rowid $i \
+        --header > param_table.txt
       else
         # Compute stats and just append stats in output
         ./arlsumstat3522_64bit "arlequin/pod_"$i".arp" outSS 1 0 run_silent
+        python3 -m crumbs.retrieve_parameters \
+        --database $1 \
+        --table "quetzal_EGG_1" \
+        --rowid $i 
+        --no-header >> param_table.txt
       fi
       let "counter+=1"
     else
