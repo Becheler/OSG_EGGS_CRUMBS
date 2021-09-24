@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for i in {1..30}
+for i in {1..1000}
 do
    echo "JOB A$i A.condor"
    echo "VARS A$i i=\"$i\""
