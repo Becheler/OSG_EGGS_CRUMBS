@@ -10,7 +10,8 @@ if (( ${#rowids[@]} != 0 )); then
   for i in $rowids
   do
     echo "Database "$1", rowid "$i": sampling s prior."
-    s=$(python3 -m crumbs.sample "uniform_real" 0.00025 0.0000025)
+    #s=$(python3 -m crumbs.sample "uniform_real" 0.00025 0.0000025)
+    s=0.000000005
     echo "Database "$1", rowid "$i": s = "$s"."
     echo "Database "$1", rowid "$i": simulating PHYLIP sequences in folder </phylip>."
     # simulate PHYLIP
