@@ -1,5 +1,0 @@
-WARNING  glidein_config not defined () in singularity_lib.sh. Some functions like advertise and error_gen will be limited.
-WARNING  String '/execute/dir_' in X509_USER_PROXY (/var/lib/condor/execute/dir_126450/glide_fxOnIB/ticket/myproxy), the conversion to run in Singularity may be incorrect
-WARNING  String '/execute/dir_' in X509_USER_CERT (/var/lib/condor/execute/dir_126450/glide_fxOnIB/hostcert.pem), the conversion to run in Singularity may be incorrect
-WARNING  String '/execute/dir_' in X509_USER_KEY (/var/lib/condor/execute/dir_126450/glide_fxOnIB/hostkey.pem), the conversion to run in Singularity may be incorrect
-WARNING  String '/execute/dir_' in _CONDOR_EXECUTE (/var/lib/condor/execute/dir_126450/glide_fxOnIB/execute), the conversion to run in Singularity may be incorrect
