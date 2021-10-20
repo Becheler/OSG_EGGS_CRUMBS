@@ -1,12 +1,14 @@
-# OSG_EGGS_CRUMBS
+# What does this do:
 
-Scripts and configuration files used to get the following running on Open-Science-Grid:
+Perform a spatially explicit ABC analysis, running on Open-Science-Grid and using the
+following simulation resources:
 
 - quetzal-CoalTL
 - quetzal-EGGS
 - quetzal-CRUMBS
+- decrypt
 
-# Input
+# User input
 
 The following input files are defined by the user and should be placed in the `input_files` folder:
 
@@ -18,8 +20,13 @@ The following input files are defined by the user and should be placed in the `i
 - `sample.csv`: file mapping sampled gene copies IDS to their latitude longitude sampling points
 - `imap.txt`: IMAP file from BPP mapping individuals to putative populations for computing summary statistics
 
-# Configuration:
+# User configuration
 
 - Prior distributions for the demographic scenario are set in the `src/DAG/A.condor` file.
 - Number of simulations is set in the `src/DAG/generate_DAG.sh` file.
--
+- The pipeline Directed Acyclic Graph is generated with `sh src/DAG/generate_DAG.sh > workflow.dag`
+- The worklow is submitted with `condor_submit_dag workflow.dag`
+- Assess the advancement of simulations with `condor_watch_q`
+- Once the simulations are done, retrieve:
+  - summary statistics: `sh src/post-analysis/get_sumstats.sh`
+  - parameters table: `sh src/post-analysis/get_param_table.sh`
