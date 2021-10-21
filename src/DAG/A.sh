@@ -5,7 +5,7 @@ N=$(python3 -m crumbs.sample "uniform_integer" 10 100000)
 K=$(python3 -m crumbs.sample "uniform_integer" 10 100000)
 r=$(python3 -m crumbs.sample "uniform_real" 1 5)
 m=$(python3 -m crumbs.sample "uniform_real" 0.0 0.5)
-g=$(python3 -m crumbs.sample "uniform_integer" 3000 5000)
+g=$(python3 -m crumbs.sample "uniform_integer" 300 500)
 p=$(python3 -m crumbs.sample "uniform_real" 0.0001 0.5)
 latlon=($(python3 -m crumbs.sample "uniform_latlon" "suitability.tif" | tr -d '[],'))
 
