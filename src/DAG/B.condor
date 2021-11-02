@@ -6,7 +6,6 @@ should_transfer_files    = YES
 when_to_transfer_output  = ON_EXIT
 transfer_input_files     = output_files/output-$(i).db, input_files/imap.txt, bin/arlsumstat3522_64bit, input_files/ssdefs.txt, input_files/arl_run.ars
 arguments                = output-$(i).db
-transfer_output_files    = outSS, param_table.txt
 transfer_output_remaps   = "outSS = output_files/sumstats-$(i).txt; param_table.txt = output_files/param_table-$(i).txt"
 output                   = output_files/B-$(i).out
 error                    = output_files/B-$(i).err
