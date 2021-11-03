@@ -35,9 +35,7 @@ if (( ${#rowids[@]} != 0 )); then
     --output "phylip/pod_"$i".phyl"
 
     # If PHYLIP files looks normal
-    cat phylip/pod_"$i".phyl
     head -n -1 phylip/pod_"$i".phyl > temp.txt ; mv temp.txt phylip/pod_"$i".phyl
-    cat phylip/pod_"$i".phyl
     if [ -s "phylip/pod_"$i".phyl" ]; then
       echo "Database "$1", rowid "$i": PHYLIP file phylip/pod_"$i".phyl exists and looks legit. Creating folder </arlequin> for format conversion."
       
@@ -70,6 +68,8 @@ if (( ${#rowids[@]} != 0 )); then
 
         # Just append the stats in the table
         ./arlsumstat3522_64bit "arlequin/pod_"$i".arp" outSS 1 0 run_silent
+        
+        # Append params
         python3 -m crumbs.retrieve_parameters \
         --database $1 \
         --table "quetzal_EGG_1" \
